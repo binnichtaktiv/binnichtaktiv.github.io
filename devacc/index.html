@@ -1,8 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0;url=https://devacc.signingcerts.com/?i=50">
+  <meta name="theme-color" content="#000000" />
+  <title>Image Previews Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #00152A, #005580, #1593c9, #6ebbf3);
+      min-height: 100vh;
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .image-preview {
+      width: 80vw;
+      margin: 20px;
+    }
+    
+    .image-preview img {
+      width: 100%;
+      height: 600px;
+      object-fit: contain;
+    }
+    
+    .text {
+      text-align: center;
+      font-size: 18px;
+      color: white;
+    }
+    
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+    .buttons button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #1593c9;
+      color: white;
+      border: 2px solid white;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    
+    .buttons button:hover {
+      background-color: #005580;
+    }
+    
+    @media (max-width: 800px) {
+      .image-preview {
+        width: 100%;
+      }
+    
+      .image-preview img {
+        height: 300px;
+      }
+    
+      .text {
+        font-size: 16px;
+      }
+    
+      .buttons button {
+        padding: 5px 10px;
+        font-size: 16px;
+      }
+    }
+     
+
+  </style>
 </head>
 <body>
+  <div class="image-preview">
+    <img src="https://github.com/binnichtaktiv/binnichtaktiv.github.io/blob/main/photo2.png?raw=true" alt="Image 2 Preview">
+    <p class="text"><strong>Indian Apple Developer Accounts (Private Seller)</strong></p>
+    <div class="buttons">
+      <button onclick="window.location.href='https://t.me/+KIg4KBy2fbc3ODE9'">145€ - With Guarantee</button>        
+    </div>
+  </div>
+  <div class="image-preview">
+    <img src="https://github.com/binnichtaktiv/binnichtaktiv.github.io/blob/main/photo1.png?raw=true" alt="Image 1 Preview">
+    <p class="text"><strong>Fully Verified Apple Developer Accounts With Instant Activation</strong></p>
+    <div class="buttons">
+      <button onclick="window.location.href='https://devacc.signingcerts.com/?i=50'">150€ - With Guarantee</button>        
+    </div>
+  </div>
 </body>
 </html>
