@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000b15, #002545, #0a618d, #3380ad);
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h3, p {
+            color: #eee;
+        }
+
+        h3 a {
+            font-weight: bold;
+            color: #be76ee;
+            text-decoration: none;
+            display: inline-block;
+            border-bottom: 2px solid #be76ee;
+            padding-bottom: 2px;
+            transition: border-color 0.2s;
+        }
+
+        h3 a:hover {
+            border-color: #fff;
+        }
+
+        #repos-container > div {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        #repos-container > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .github-btn {
+            display: inline-block;
+            background: #be76ee;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .github-btn:hover {
+            background: #a463d5;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive styles for smaller screens */
+        @media only screen and (max-width: 600px) {
+            .github-btn {
+                margin-bottom: 30px;
+            }
+
+            #repos-container {
+                margin-top: 20px;
+            }
+        }
+
+        /* Styles for larger screens */
+        @media only screen and (min-width: 992px) {
+            body {
+                font-size: 18px;
+            }
+
+            #repos-container {
+                max-width: 80%;
+                margin: 0 auto;
+                padding: 40px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        /* Styles for very large screens */
+        @media only screen and (min-width: 1200px) {
+            body {
+                font-size: 22px;
+            }
+
+            #repos-container {
+                max-width: 60%;
+                margin: 0 auto;
+                padding: 60px;
+            }
+
+            h3 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://github.com/binnichtaktiv" target="_blank" class="github-btn">View My GitHub Profile</a>
+    <div id="repos-container"></div>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: "https://api.github.com/users/binnichtaktiv/repos",
+            method: "GET",
+            success: function (repos) {
+                // Sort repos by updated date in descending order
+                repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+
+                repos.forEach(repo => {
+                    // Fetching languages for each repo
+                    $.ajax({
+                        url: repo.languages_url,
+                        method: "GET",
+                        success: function (languages) {
+                            const languagesList = Object.keys(languages).join(', ');
+
+                            const date = new Date(repo.updated_at);
+                            const formattedDate = `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}-${String(date.getUTCDate()).padStart(2, '0')} ${String(date.getUTCHours()).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(2, '0')}`;
+
+                            let repoSize = `${repo.size} KB`;
+                            if (repo.size >= 1024) {
+                                repoSize = `${(repo.size / 1024).toFixed(2)} MB`;
+                            }
+
+                            const repoElement = `
+                                <div>
+                                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                                    <p><strong>Last Updated:</strong> ${formattedDate}</p>
+                                    <p><strong>Repository Size:</strong> ${repoSize}</p>
+                                    <p><strong>Used Languages:</strong> ${languagesList}</p>
+                                    <p><strong>Stars:</strong> ${repo.stargazers_count}</p>
+                                    <p><strong>Forks:</strong> ${repo.forks_count}</p>
+                                    <p><strong>Open Issues:</strong> ${repo.open_issues_count}</p>
+                                </div>
+                                <hr>`;
+                            $('#repos-container').append(repoElement);
+                        }
+                    });
+                });
+            },
+            error: function (error) {
+                console.error("An error occurred:", error);
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
