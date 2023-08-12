@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
+    <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/main/bna.ico" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SKVN6LFV8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3SKVN6LFV8');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +85,6 @@
             transform: translateY(-3px);
         }
 
-        /* Responsive styles for smaller screens */
         @media only screen and (max-width: 600px) {
             .github-btn {
                 margin-bottom: 30px;
@@ -88,7 +95,6 @@
             }
         }
 
-        /* Styles for larger screens */
         @media only screen and (min-width: 992px) {
             body {
                 font-size: 18px;
@@ -109,7 +115,6 @@
             }
         }
 
-        /* Styles for very large screens */
         @media only screen and (min-width: 1200px) {
             body {
                 font-size: 22px;
@@ -147,7 +152,6 @@
                 repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
                 repos.forEach(repo => {
-                    // Fetching languages for each repo
                     $.ajax({
                         url: repo.languages_url,
                         method: "GET",
