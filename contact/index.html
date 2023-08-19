@@ -28,7 +28,7 @@
         }
 
         .contact-header {
-            font-size: 3vw;
+            font-size: 34px;
             color: white;
             text-align: center;
             margin-top: 40px;
@@ -51,8 +51,8 @@
             border-radius: 50%;
             text-align: center;
             position: relative;
-            width: 25vw;
-            height: 25vw;
+            width: 150px;
+            height: 150px;
             transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
             display: flex;
             justify-content: center;
@@ -92,8 +92,19 @@
             background-color: black;
             padding: 20px;
             border-radius: 10px;
-            max-width: 80vw;
+            max-width: 300px;
             text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .contact-header {
+                font-size: 5vw;
+            }
+
+            .contact-links a {
+                width: 25vw;
+                height: 25vw;
+            }
         }
     </style>
     <script>
