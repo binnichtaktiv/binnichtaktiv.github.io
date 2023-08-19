@@ -75,7 +75,6 @@
             object-fit: cover;
         }
 
-        /* Popup Styles */
         .popup {
             display: none;
             position: fixed;
@@ -97,6 +96,29 @@
             max-width: 300px;
             text-align: center;
         }
+
+        @media (max-width: 600px) {
+            .contact-header {
+                font-size: 48px;
+                margin-top: 20px;
+            }
+
+            .contact-links a {
+                width: 200px;
+                height: 200px;
+            }
+
+            .contact-links a img {
+                height: 200px;
+                width: 200px;
+            }
+
+            .popup-content {
+                font-size: 24px;
+                padding: 40px;
+                max-width: 90%;
+            }
+        }
     </style>
     <script>
         function showPopup() {
@@ -110,9 +132,7 @@
 </head>
 
 <body>
-    <div class="contact-header">
-        Contact Me
-    </div>
+    <div class="contact-header">Contact Me</div>
 
     <div class="contact-links">
         <a href="https://www.reddit.com/user/Binnichtaktiv_" target="_blank">
@@ -129,13 +149,10 @@
         </a>
     </div>
 
-    <!-- Popup -->
     <div class="popup" onclick="hidePopup()">
         <div class="popup-content" onclick="event.stopPropagation();">
             My discord username: binnichtaktiv
         </div>
     </div>
-
 </body>
-
 </html>
