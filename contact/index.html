@@ -28,7 +28,7 @@
         }
 
         .contact-header {
-            font-size: 34px;
+            font-size: 60px;
             font-weight: bold;
             color: white;
             text-align: center;
@@ -52,8 +52,8 @@
             border-radius: 50%;
             text-align: center;
             position: relative;
-            width: 150px;
-            height: 150px;
+            width: 25vw;
+            height: 25vw;
             transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
             display: flex;
             justify-content: center;
@@ -75,6 +75,18 @@
             object-fit: cover;
         }
 
+        /* Stile für Desktop */
+        @media (hover: hover) and (pointer: fine) {
+            .contact-header {
+                font-size: 34px;
+            }
+
+            .contact-links a {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
         .popup {
             display: none;
             position: fixed;
@@ -91,27 +103,19 @@
         .popup-content {
             color: white;
             background-color: black;
-            padding: 25px;
+            padding: 35px;
             border-radius: 10px;
-            max-width: 350px;
+            max-width: 80vw;
             text-align: center;
-            font-size: 25px;
+            font-size: 35px;
         }
 
-        @media (max-width: 991px) {
-            .contact-header {
-                font-size: 60px;
-            }
-
-            .contact-links a {
-                width: 25vw;
-                height: 25vw;
-            }
-
+        /* Desktop-Größe für das Popup */
+        @media (hover: hover) and (pointer: fine) {
             .popup-content {
-                font-size: 35px;
-                padding: 35px;
-                max-width: 80vw;
+                padding: 25px;
+                font-size: 25px;
+                max-width: 350px;
             }
         }
     </style>
