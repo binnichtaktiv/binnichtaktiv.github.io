@@ -1,156 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SKVN6LFV8"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3SKVN6LFV8');
-    </script>
     <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/main/bna.ico" type="image/x-icon">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-3SKVN6LFV8');
+    </script>
     <meta name="theme-color" content="#000000" />
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Image Previews Page</title>
     <style>
+        #dropdown {
+            cursor: pointer;
+            background: #1593c9;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        #dropdown:hover {
+            background: #005580;
+        }
+
+        #dropdown-content {
+            display: none;
+            background: #005580;
+            color: white;
+            padding: 20px;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
         body {
             font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #00152A, #005580, #1593c9, #6ebbf3);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             min-height: 100vh;
             padding: 20px;
             margin: 0;
-        }
-
-        .main-container {
-            text-align: center;
-            padding: 30px;
-            background-color: transparent;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .profile-image {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid #00152A;
-            margin-bottom: 20px;
-        }
-
-        .username {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 30px;
-            color: #ffffff;
-        }
-
-        .btn {
-            font-size: 18px;
-            width: 100%;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            background-size: 200% auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            transition: background-position 0.5s, color 0.5s;
-            padding: 15px 0;
-            text-decoration: none;
-            display: block;
-            background-color: transparent;
-            border: none;
-            color: #ffffff;
-            opacity: 0.8;
-        }
-
-        .btn:hover {
-            background-position: right center;
-            color: #fff;
-        }
-
-        .btn-primary {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-secondary {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-success {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-danger {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-info {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-warning {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-youtube {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .logo-container {
-            position: fixed;
-            top: 10px;
-            left: 10px;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            z-index: 9999; 
         }
 
-        .logo-container img {
-            width: 30px;
-            height: 30px;
-            margin-right: 5px;
+        .image-preview {
+            width: 80vw;
+            margin: 20px;
+        }
+
+        .image-preview img {
+            width: 100%;
+            height: 600px;
+            object-fit: contain;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #1593c9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
             cursor: pointer;
+            transition: background 0.3s;
         }
 
-        .logo-container h2 {
-            color: #fff;
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            margin: 0;
+        .buttons button:hover {
+            background-color: #005580;
         }
 
-        @media (min-width: 768px) {
-            .main-container {
-                padding: 30px 100px;
-                max-width: 800px;
+        @media (max-width: 800px) {
+            .image-preview {
+                width: 100%;
             }
 
-            .btn {
-                width: auto;
-                padding: 15px 30px;
+            .image-preview img {
+                height: 300px;
+            }
+
+            .buttons button {
+                padding: 5px 10px;
+                font-size: 16px;
             }
         }
+
+        a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h3 {
+          font-style: italic;
+      }
+      
+      
+
     </style>
-
-    <title>binnichtaktiv</title>
+    <script>
+      function toggleDropdown() {
+        var content = document.getElementById("dropdown-content");
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+    
+    </script>
 </head>
-<body>
 
-    <div class="main-container">
-        <img src="https://dbstaff.cc/image/profile-pictures/2.webp" alt="appdb Staff" class="profile-image">
-        <h2 class="username">@binnichtaktiv</h2>
-        <a target="_blank" href="appdb" class="btn btn-primary">AppDB</a>
-        <a href="certs" class="btn btn-secondary">Certificates</a>
-        <a href="devacc" class="btn btn-primary">Developer Accounts</a>
-        <a href="contact" class="btn btn-success">Contact Me</a>
-        <a target="_blank" href="tutorials" class="btn btn-warning">Sideloading / Appdb Tutorials</a>
-        <a href="github" class="btn btn-secondary">GitHub</a>
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me ', '#7b00e0', 'I3I4LJ8FI');kofiwidget2.draw();</script>     
+<body>
+    <div id="dropdown" onclick="toggleDropdown()">
+        WHY CAN'T I OPEN MY SIDELOADED APPS?
     </div>
+    <div id="dropdown-content">
+        <p>WHY CAN'T I OPEN MY SIDELOADED APPS? </p>
+        <h3>• Unable to Verify App</h3>
+        <p>An Internet connection is required to verify trust of the developer "iPhone Distribution: NAME". This app will not be available until verified.</p>
+        <h3>• Unable To Install “NAME"</h3>
+        <p>This app cannot be installed because its integrity could not be verified.</p>
+        <h3>• "NAME" is no longer available </h3>
+        <p>These errors mean that: </p>
+        <p>• Your device has been blacklisted from the certificate you're using, you will be unable to use that certificate on your device to sign & install apps.</p>
+        <p>• The certificate you used has been revoked by Apple, and can no longer be used to sign & install apps.</p>
+        <h3>HOW TO FIX?</h3>
+        <p>To fix it (so you can sign, install, & use apps), you must obtain a new certificate.</p>
+        <p>To do so, choose one of the following options:</p>
+        <p>• Wait patiently for a new certificate to be released/leaked publicly. Nobody knows when a new certificate will be leaked it can happen in the next 2 seconds or in 3 weeks. You can check status <strong><a href="https://t.me/appdb_telegram/99013" target="_blank">here</a></strong>.</p>
+        <p>• Purchase an Apple Developer account <strong><a href="https://binnichtaktiv.github.io/devacc" target="_blank">here</a></strong> (150€/yr).</p>
+        <p>• Purchase access to a certificate through <strong><a href="https://binnichtaktiv.github.io/certs" target="_blank">third-party sites</a></strong> (15.99€/yr).</p>
+        <a href="/devmode" style="color: red; font-weight: bold; font-size: 18px; display: block; margin-top: 20px; margin-left: auto; margin-right: auto; width: fit-content; text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">How to enable Developer Mode</a>
+    </div>
+
+    <div class="image-preview">
+        <img src="https://github.com/binnichtaktiv/binnichtaktiv.github.io/blob/main/sccert.png?raw=true" alt="Image 2 Preview">
+        <div class="buttons">
+            <button onclick="window.location.href='sc'">Signingcerts Certificate (15.99€)</button>
+        </div>
+    </div>
+
+    <div class="image-preview">
+        <img src="https://github.com/binnichtaktiv/binnichtaktiv.github.io/blob/main/owncert.png?raw=true" alt="Image 1 Preview">
+        <div class="buttons">
+            <button onclick="window.location.href='own'">Certificate sold by me (dm me) (14.99€)</button>
+        </div>
+    </div>
+
 </body>
+
 </html>
