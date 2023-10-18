@@ -8,9 +8,59 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-3SKVN6LFV8');
+    
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
+
+    window.onload = function() {
+        if (isMobileDevice()) {
+            document.querySelector('.content').style.fontSize = '40px';
+            document.querySelector('.button img').style.width = '200px';
+            document.querySelector('.button img').style.height = '200px';
+        }
+    };
     </script>
-    <meta http-equiv="refresh" content="0;url=https://appdb.to">
+    <style>
+        body {
+            background: linear-gradient(135deg, #00152A 0%, #005580 25%, #1593c9 50%, #6ebbf3 100%);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content {
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .button {
+            display: inline-block;
+            color: white;
+            background-color: transparent;
+            padding: 20px 40px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
+    <div class="content">
+        <p>AppDB is an alternative App Store for iOS that supports official sideloading. You can download iOS apps and sideload iOS apps without jailbreak and computer. It allows publishing apps without AppStore restrictions. It also provides solutions for app publishers without AppStore restrictions. Moreover, you can download and sideload iOS games and apps for free without jailbreak with Signing Service. It also offers macOS games and apps as well as books for iPhone, iPad, and macOS. It is fully supported by the community.</p>
+        <a href="https://appdb.to" class="button">
+            <img src="https://appdb.to/img/logo-dark.919deb7d.svg">
+        </a>
+    </div>
 </body>
 </html>
