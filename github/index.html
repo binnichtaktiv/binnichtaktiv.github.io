@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <html style="background-color: #000000; height: 100%;">
     <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/main/bna.ico" type="image/x-icon">
@@ -78,7 +78,6 @@
             transform: translateY(-3px);
         }
 
-        /* Responsive styles for smaller screens */
         @media only screen and (max-width: 600px) {
             .github-btn {
                 margin-bottom: 30px;
@@ -89,7 +88,6 @@
             }
         }
 
-        /* Styles for larger screens */
         @media only screen and (min-width: 992px) {
             body {
                 font-size: 18px;
@@ -110,7 +108,6 @@
             }
         }
 
-        /* Styles for very large screens */
         @media only screen and (min-width: 1200px) {
             body {
                 font-size: 22px;
@@ -136,7 +133,11 @@
 <body>
 
     <a href="https://github.com/binnichtaktiv" target="_blank" class="github-btn">View My GitHub Profile</a>
+
+    <img src="https://github-readme-stats.vercel.app/api?username=binnichtaktiv&show_icons=true&theme=radical&show=reviews,discussions_started,discussions_answered,prs_merged,&icon_color=be76ee&rank_icon=github" alt="GitHub Stats" style="margin-top: 20px;">
+
     <div id="repos-container"></div>
+
 
 <script>
     $(document).ready(function () {
