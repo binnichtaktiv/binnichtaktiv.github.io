@@ -30,7 +30,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #000b15, #002545, #0a618d, #3380ad);
+            background: linear-gradient(135deg, #03305b, #03457f, #0a618d, #297dae);
             min-height: 100vh;
             padding: 20px;
             margin: 0;
@@ -108,5 +108,57 @@
         <img src="https://github-readme-stats.vercel.app/api?username=binnichtaktiv&show_icons=true&theme=radical&show=reviews,discussions_started,discussions_answered,prs_merged,&icon_color=be76ee&rank_icon=github" alt="GitHub Stats" style="width: 100px; height: 100px;"> <!-- Ändere die Breite und Höhe des GitHub Stats-Bildes auf mobilen und Desktop-Geräten -->
     </div>
     <div id="repos-container"></div>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: "https://api.github.com/users/binnichtaktiv/repos",
+            method: "GET",
+            success: function (repos) {
+                // Sort repos by updated date in descending order
+                repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+
+                repos.forEach(repo => {
+                    // Fetching languages for each repo
+                    $.ajax({
+                        url: repo.languages_url,
+                        method: "GET",
+                        success: function (languages) {
+                            const languagesList = Object.keys(languages).join(', ');
+
+                            const date = new Date(repo.updated_at);
+                            const formattedDate = `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}-${String(date.getUTCDate()).padStart(2, '0')} ${String(date.getUTCHours()).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(2, '0')}`;
+
+                            let repoSize = `${repo.size} KB`;
+                            if (repo.size >= 1024) {
+                                repoSize = `${(repo.size / 1024).toFixed(2)} MB`;
+                            }
+
+                            const repoElement = `
+                                <div>
+                                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                                    <p><strong>Last Updated:</strong> ${formattedDate}</p>
+                                    <p><strong>Repository Size:</strong> ${repoSize}</p>
+                                    <p><strong>Used Languages:</strong> ${languagesList}</p>
+                                    <p><strong>Stars:</strong> ${repo.stargazers_count}</p>
+                                    <p><strong>Forks:</strong> ${repo.forks_count}</p>
+                                    <p><strong>Open Issues:</strong> ${repo.open_issues_count}</p>
+                                </div>
+                                <hr>`;
+                            $('#repos-container').append(repoElement);
+                        }
+                    });
+                });
+            },
+            error: function (error) {
+                console.error("An error occurred:", error);
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
 </body>
 </html>
