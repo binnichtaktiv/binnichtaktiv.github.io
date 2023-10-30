@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="theme-color" content="#000000" />
+    <html style="background-color: #000000; height: 100%;">
+    <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/main/bna.ico" type="image/x-icon">
+
+    <title>Order Status Checker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #00152A, #005580, #1593c9, #6ebbf3);
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 20px;
+            color: #fff;
+            margin: 0 0 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #1593c9;
+            border-radius: 5px;
+            margin-right: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1593c9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005580;
+        }
+
+        .get-udid-button {
+            margin-bottom: 20px;
+        }
+
+        .additional-area {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <script>
+        function checkOrderStatus() {
+            var udidInput = document.getElementById("udidInput").value;
+            var url = "https://signingcerts.com/order-status?udid=" + udidInput;
+            window.open(url, "_blank");
+        }
+    </script>
+</head>
+<body>
+    <div class="get-udid-button">
+        <a href="https://dbservices.to/get-udid/" target="_blank">
+            <button>Get your UDID here</button>
+        </a>
+    </div>
+    
+    <div class="container">
+        <p>Please enter your UDID to check your order status:</p>
+        <input type="text" id="udidInput" placeholder="Enter UDID">
+        <button onclick="checkOrderStatus()">Check</button>
+    </div>
+</body>
+</html>
