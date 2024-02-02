@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000" />
     <html style="background-color: #000000; height: 100%;">
     <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/main/bna.ico" type="image/x-icon">
-    <title>Revnuecat</title>
+    <title>API Request Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -15,19 +15,14 @@
             min-height: 100vh;
             padding: 20px;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             color: white;
         }
 
         h1 {
-            color: white;
+            margin-bottom: 20px;
         }
 
         form {
-            text-align: center;
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
@@ -55,7 +50,7 @@
             padding: 10px 20px;
             background-color: #1593c9;
             color: white;
-            border: 2px solid white; /* White border added */
+            border: none;
             border-radius: 5px;
             font-size: 18px;
             cursor: pointer;
@@ -68,9 +63,6 @@
 
         #response {
             margin-top: 20px;
-            border: 2px solid black;
-            padding: 10px;
-            border-radius: 5px;
         }
 
         #response h2 {
@@ -82,8 +74,23 @@
             font-weight: bold;
             color: white;
             font-size: 20px;
+            margin: 0;
         }
     </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">API Request Generator</h1>
+        <form id="authForm">
+            <div class="form-group">
+                <label for="authKey">Authentication Key:</label>
+                <input type="text" id="authKey" name="authKey" class="form-control" required>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="generateCode()">Generate Code</button>
+        </form>
+    </div>
+    <div id="response"></div>
+
     <script>
         function generateCode() {
             var authKey = document.getElementById('authKey').value;
@@ -104,20 +111,16 @@
                     formattedResponse += line + '<br>';
                 });
                 formattedResponse += '</pre></div>';
-                document.body.innerHTML += formattedResponse;
+                document.getElementById('response').innerHTML = formattedResponse;
             })
             .catch(error => {
                 document.getElementById('response').innerHTML = '<div id="response"><h2>Error:</h2><p>' + error.message + '</p></div>';
             });
         }
     </script>
-</head>
-<body>
-    <h1>API Request Generator</h1>
-    <form id="authForm">
-        <label for="authKey">Authentication Key:</label>
-        <input type="text" id="authKey" name="authKey" required>
-        <button type="button" onclick="generateCode()">Generate Code</button>
-    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
