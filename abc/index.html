@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <html style="background-color: #000000; height: 100%;">
+    <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/main/bna.ico" type="image/x-icon">
+    <title>Revnuecat</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #00152A, #005580, #1593c9, #6ebbf3);
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        form {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        label {
+            color: white;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #1593c9;
+            border-radius: 5px;
+            margin-right: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            color: #1593c9;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1593c9;
+            color: white;
+            border: 2px solid white; /* White border added */
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005580;
+        }
+
+        #response {
+            margin-top: 20px;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #response h2 {
+            color: #1593c9;
+            font-size: 24px;
+        }
+
+        #response pre {
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function generateCode() {
+            var authKey = document.getElementById('authKey').value;
+
+            fetch('https://api.revenuecat.com/v1/product_entitlement_mapping', {
+                method: 'GET',
+                headers: {
+                    'Authorization': authKey,
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                data = data.replace(/({|}|\[|\]|,)/g, '$1\n');
+                
+                var responseLines = data.split('\n');
+                var formattedResponse = '<div id="response"><h2>Response:</h2><pre>';
+                responseLines.forEach(line => {
+                    formattedResponse += line + '<br>';
+                });
+                formattedResponse += '</pre></div>';
+                document.body.innerHTML += formattedResponse;
+            })
+            .catch(error => {
+                document.getElementById('response').innerHTML = '<div id="response"><h2>Error:</h2><p>' + error.message + '</p></div>';
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>API Request Generator</h1>
+    <form id="authForm">
+        <label for="authKey">Authentication Key:</label>
+        <input type="text" id="authKey" name="authKey" required>
+        <button type="button" onclick="generateCode()">Generate Code</button>
+    </form>
+</body>
+</html>
