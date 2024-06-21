@@ -100,21 +100,33 @@
 
         h3 {
           font-style: italic;
-      }
-      
-      
+        }
 
+        .button-style {
+            padding: 10px 20px;
+            margin: 5px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-align: center;
+        }
+
+        .button-style:hover {
+            background-color: #005580;
+        }
     </style>
     <script>
-      function toggleDropdown() {
-        var content = document.getElementById("dropdown-content");
-        if (content.style.display === "none" || content.style.display === "") {
-            content.style.display = "block";
-        } else {
-            content.style.display = "none";
+        function toggleDropdown() {
+            var content = document.getElementById("dropdown-content");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
         }
-    }
-    
     </script>
 </head>
 
@@ -149,16 +161,6 @@
         Before you ask when a new certificate will be released, please ask yourself: if you paid for a $3,000USD enterprise certificate, would you be willing to let complete strangers use it to sideload apps and potentially get it revoked by Apple, losing your $3,000? Most people would say “No”, but some generous users might say “Yes”.</p>
     </div>
 
-
-    <div class="image-preview">
-        <img src="https://github.com/binnichtaktiv/binnichtaktiv.github.io/blob/main/sccert.png?raw=true" alt="Signingcerts Image">
-        <div class="buttons">
-            <button onclick="window.location.href='signingcerts'">Signingcerts Certificate (15.99€)</button>
-            <button onclick="window.location.href='order-status'">Check my order status on Signingcerts</button>
-
-        </div>
-    </div>
-
     <div class="image-preview">
         <img src="https://github.com/binnichtaktiv/binnichtaktiv.github.io/blob/main/owncert.png?raw=true" alt="Own Cert Image">
         <div class="buttons">
@@ -166,6 +168,7 @@
         </div>
     </div>
 
-</body>
+    <p class="button-style">Dont buy a certificate on Signingcerts.com⚠️ The developer is no longer active there and there is also no support anymore</p>
 
+</body>
 </html>
