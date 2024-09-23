@@ -1,0 +1,12 @@
+[
+    {
+    "button_text": "Youtube",
+    "button_link": "https://youtube.com",
+    "text": "Follow my youtube channel" 
+    },
+    {
+    "button_text": "TikTok",
+    "button_link": "https://tiktok.com",
+    "text": "Follow my tiktok channel" 
+    }
+]
