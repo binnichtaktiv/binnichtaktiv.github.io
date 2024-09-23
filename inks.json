@@ -1,17 +1,208 @@
+Here's the JSON representation of the elements you've provided:
+
+```json
 [
     {
-    "button_text": "Youtube",
-    "button_link": "https://youtube.com",
-    "text": "Follow my youtube channel" 
+        "button_text": "binnichtaktiv's iPA Library",
+        "button_link": "https://t.me/binnichtaktivsipas",
+        "text": "My group of course :) Enjoy always up to date iPAs "
     },
     {
-    "button_text": "TikTok",
-    "button_link": "https://tiktok.com",
-    "text": "Follow my tiktok channel" 
+        "button_text": "zxcvbn's tweaked iPAs",
+        "button_link": "https://t.me/zxcvbn_tweaked",
+        "text": "(that arent annoying)"
     },
     {
-    "button_text": "sdfsddfsd",
-    "button_link": "https://fsdfsdfsdf.com",
-    "text": "Follow my fdsfdsfsd channel" 
-    }
-]
+        "button_text": "IOS APPS | LIBRARY IPA",
+        "button_link": "https://t.me/IAppsBestLibrary",
+        "text": "made by @BillyMooree"
+    },
+    {
+        "button_text": "Dell's iPA Library",
+        "button_link": "https://t.me/abcdefghjklmnnejcnejhwbxbejfnj",
+        "text": "only apps with high AppStore rating are hacked. Every hacked iPA has a .deb that you can download for free"
+    },
+    {
+        "button_text": "DPixel | IPA Library 👾",
+        "button_link": "https://t.me/dpixel",
+        "text": "free und useful iPAs from their big iPA Library"
+    },
+    {
+        "button_text": "Dan's Workshop",
+        "button_link": "https://t.me/dvntms",
+        "text": "This channel contains tweak releases, apps and some news... maybe"
+    },
+    {
+        "button_text": "Babylon iPA Library",
+        "button_link": "https://t.me/BabylonIPA",
+        "text": "modded ios games for free"
+    },
+    {
+        "button_text": "KAMO HACkS 🪓 𝗜𝗣𝗔 (*iOSGods)",
+        "button_link": "https://t.me/kamohacks",
+        "text": "biggest game iPA library"
+    },
+    {
+        "button_text": "⏤͟͞LK Team Channel",
+        "button_link": "https://t.me/LKTEAM2023",
+        "text": "Apps that have free in app purchases or paid apps that are free: information from"
+    },
+    {
+        "button_text": "AppHapps",
+        "button_link": "https://twitter.com/AppHapps",
+        "text": "on 𝕏"
+    },
+    {
+        "button_text": "Minorpatch",
+        "button_link": "https://www.minorpatch.com",
+        "text": "best website for macOS apps in my opinion"
+    },
+    {
+        "button_text": "MacDrop",
+        "button_link": "https://macdrop.net",
+        "text": "for macOS apps but sometimes not working, at least for me"
+    },
+    {
+        "button_text": "Mac Torrents",
+        "button_link": "https://www.torrentmac.net",
+        "text": "Free Apps, Games & Plugins."
+    },
+    {
+        "button_text": "NMac",
+        "button_link": "https://nmac.to",
+        "text": "Mac OS X Applications Archives"
+    },
+    {
+        "button_text": "FileCR",
+        "button_link": "https://filecr.com/en",
+        "text": "Download free Windows & MacOS software, Android Apps & Games, E-Learning Videos & E-Books, PC Games, Scripts and much more."
+    },
+    {
+        "button_text": "LRepacks",
+        "button_link": "https://lrepacks.net",
+        "text": "Download free repacks for Windows"
+    },
+    {
+        "button_text": "Get Into PC",
+        "button_link": "https://getintopc.com",
+        "text": "Download your desired app for free"
+    },
+    {
+        "button_text": "FitGirl Repacks",
+        "button_link": "https://fitgirl-repacks.site",
+        "text": "Best and trusted site for game repacks for windows"
+    },
+    {
+        "button_text": "Skidrow & Reloaded Games",
+        "button_link": "https://www.skidrowreloaded.com",
+        "text": "Another good site for free games for windows"
+    },
+    {
+        "button_text": "Livetv.ru",
+        "button_link": "https://livetv.ru",
+        "text": "Best streaming website for sport in ok quality, has german links too"
+    },
+    {
+        "button_text": "2ix2",
+        "button_link": "https://2ix2.com",
+        "text": "Watch F1 on Servus or ORF for free (in german)"
+    },
+    {
+        "button_text": "Streamkiste.tv",
+        "button_link": "https://streamkiste.tv",
+        "text": "German and english films and series in good quality"
+    },
+    {
+        "button_text": "KinoGer",
+        "button_link": "https://kinoger.to",
+        "text": "German films and series in good quality"
+    },
+    {
+        "button_text": "Burning-Series",
+        "button_link": "https://burning-series.io",
+        "text": "German and english series, always up to date"
+    },
+    {
+        "button_text": "s.to",
+        "button_link": "https://s.to",
+        "text": "Another site for german and english series"
+    },
+    {
+        "button_text": "Sega Football",
+        "button_link": "https://t.me/binnichtaktivsipas/2/21462",
+        "text": "Apps for streaming football for free. Deleted from the AppStore so you have to sideload it."
+    },
+    {
+        "button_text": "Football TV",
+        "button_link": "https://t.me/binnichtaktivsipas/2/21473",
+        "text": ""
+    },
+    {
+        "button_text": "Hola Football",
+        "button_link": "https://t.me/binnichtaktivsipas/2/46840",
+        "text": ""
+    },
+    {
+        "button_text": "streameast",
+        "button_link": "https://v2.streameast.to/",
+        "text": "Watch high-quality, free streaming for NFL, NBA, MLB, UFC, Boxing, and Formula 1 events"
+    },
+    {
+        "button_text": "Full Races",
+        "button_link": "https://fullraces.com",
+        "text": "Free Formula 1, F1, MotoGP, IndyCar, NASCAR streams in HD"
+    },
+    {
+        "button_text": "sportsurge",
+        "button_link": "https://v2.sportsurge.to",
+        "text": "Watch NBA, NFL, MLB, NHL, soccer, and more for free with Sportsurge"
+    },
+    {
+        "button_text": "Best and biggest list of movie/series/tv livestream/anime websites",
+        "button_link": "https://n3rdmade.github.io/TBCPL/",
+        "text": "(not my website)"
+    },
+    {
+        "button_text": "Spotify Premium (only for people in germany)",
+        "button_link": "https://t.me/binnichtaktiv",
+        "text": "If you are from germany you can get Spotify Premium for 3€ per month. I bought it for my family and it works great. The owner doesnt want that I add his link here so just dm me if you are from germany and if you are interested."
+    },
+    {
+        "button_text": "Racknerd",
+        "button_link": "https://my.racknerd.com/aff.php?aff=11438",
+        "text": "Cheap Servers that work well"
+    },
+    {
+        "button_text": "my Racknerd server",
+        "button_link": "https://my.racknerd.com/aff.php?aff=11438&pid=793",
+        "text": "Thats the server that I used"
+    },
+    {
+        "button_text": "Xentain",
+        "button_link": "https://billing.xentain.com/aff.php?aff=60",
+        "text": "Server for cheap prices (I didnt test it but heard that its good)"
+    },
+    {
+        "button_text": "Pyzule",
+        "button_link": "https://github.com/asdfzxcvbn/pyzule",
+        "text": "an azule \"clone\" written in python3. A CLI tool used to inject iOS tweaks into jailed iOS apps"
+    },
+    {
+        "button_text": "Cốc Cốc browser",
+        "button_link": "https://coccoc.com/en",
+        "text": "Easily download any video from any website. For Windows and macOS"
+    },
+    {
+        "button_text": "Aloha browser",
+        "button_link": "https://apps.apple.com/us/app/aloha-browser-private-vpn/id1105317682",
+        "text": "Easily download almost any video from any website. For iOS"
+    },
+    {
+        "button_text": "yt-dlp",
+        "button_link": "https://github.com/yt-dlp/yt-dlp",
+        "text": "A feature-rich command-line audio/video downloader"
+    },
+    {
+        "button_text": "yt-dlp online",
+        "button_link": "https://github.com/binnichtaktiv/yt-dlp-online",
+        "text": "A feature-rich command-line
