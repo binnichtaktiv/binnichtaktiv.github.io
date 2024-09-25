@@ -24,5 +24,4 @@
     - [iTunes API Script Generator](https://n9dev-dev.github.io/ScriptGenerator/iTunes/index.html)
     - ["Deb Code" Generator](https://n9dev-dev.github.io/ScriptGenerator/Deb/index.html)
     - [JSON to Obj-C](https://zxcvbn.fyi/json-to-objc/)
-    <!-- [Obj-C to JSON](https://n9dev-dev.github.io/ScriptGenerator/Objc2JSON/index.html)-->
-    - [RevenueCat Grabber](https://n9dev-dev.github.io/ScriptGenerator/ReqSend/index.html)
+    - [Obj-C to JSON](https://n9dev-dev.github.io/ScriptGenerator/Objc2JSON/index.html)
