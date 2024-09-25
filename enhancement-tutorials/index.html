@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>iOS User-based Scripting Docs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Theme: Simple -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css" type="text/css">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css">
+    <!-- docsify-themeable styles
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light">
+    <link rel="stylesheet alternative" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title="dark">-->
+    <link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">
+  </head>
+
+  <body style="overflow: auto">
+    
+    <div id="app"></div>
+    
+    <script>
+      
+    window.$docsify = {
+      name: 'iOS Cracking Docs',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 4,
+      loadNavbar: true,
+      sidebarDisplayLevel: 1, // set sidebar display level
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md',
+    },
+      timeUpdater: {
+      text: ">last update time: {docsify-updated}",
+      formatUpdated: "{YYYY}/{MM}/{DD}",
+      whereToPlace: "top",  // "top" or "bottom", default to "bottom"
+    },
+      themeable: {
+          readyTransition : true, // default
+          responsiveTables: true  // default
+      },
+      darklightTheme: {
+            defaultTheme : 'dark',
+            bodyFontSize : '17px',
+            dark: {
+                accent: '#A6BCCE',
+                toogleBackground : '#ffffff',
+                background: '#202124',
+                textColor: '#A6BCCE',
+                codeTextColor : '#ffffff',
+                codeBackgroundColor : '#1C1E1F',
+                borderColor : '#0d2538',
+                blockQuoteColor : '#9B8966',
+                highlightColor : '#DC418A',
+                sidebarSublink : '#b4b4b4',
+                codeTypeColor : '#ffffff',
+                coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+                toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
+            },
+            light: {
+                accent: '#42b983',
+                toogleBackground : '#091a28',
+                background: '#ffffff',
+                textColor: '#34495e',
+                codeTextColor : '#525252',
+                codeBackgroundColor : '#f8f8f8',
+                borderColor : 'rgba(0, 0, 0, 0.07)',
+                blockQuoteColor : '#858585',
+                highlightColor : '#d22778',
+                sidebarSublink : '#b4b4b4',
+                codeTypeColor : '#091a28',
+                coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+                toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
+            }
+        },
+        linkpreview: {
+      key: "41e5a1d186e7fd4d60546ecaee434b46",
+    },  
+          tabs: {
+        persist    : true,      // default
+        sync       : true,      // default
+        theme      : 'classic', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
+      },
+      count:{
+    countable: false,
+    position: 'top',
+    margin: '10px',
+    float: 'right',
+    fontsize:'1em',
+    color:'rgb(210,39,120)',
+    language:'english',
+    localization: {
+      words: "",
+      minute: ""
+    },
+    isExpected: true
+  },
+  auto2top: true,
+    }
+
+
+
+
+    
+  
+    </script>
+
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <!--<script
+    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js"
+    type="text/javascript">
+</script>
+
+<script
+    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"
+    type="text/javascript">
+</script>-->
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://unpkg.com/docsify-copy-code"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-chat/lib/docsify-chat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pangu/lib/pangu.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js" type="text/javascript">
+    </script>
+  </body>
+</html>
