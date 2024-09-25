@@ -1,248 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <html style="background-color: #000000; height: 100%;">
-    <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/main/bna.ico" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #00152A, #005580, #1593c9, #6ebbf3);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            margin: 0;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <title>iOS User-based Scripting Docs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Theme: Simple -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css" type="text/css">
 
-        .main-container {
-            text-align: center;
-            padding: 30px;
-            background-color: transparent;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
-            margin: 0 auto;
-        }
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css">
+    <!-- docsify-themeable styles
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light">
+    <link rel="stylesheet alternative" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title="dark">-->
+    <link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">
+  </head>
 
-        .profile-image {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid #00152A;
-            margin-bottom: 20px;
-        }
-
-        .username {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 30px;
-            color: #ffffff;
-        }
-
-        .btn {
-            font-size: 18px;
-            width: 100%;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            background-size: 200% auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            transition: background-position 0.5s, color 0.5s;
-            padding: 15px 0;
-            text-decoration: none;
-            display: block;
-            background-color: transparent;
-            border: none;
-            color: #ffffff;
-            opacity: 0.8;
-            text-align: center;
-            margin: 5px;
-        }
-
-        .btn:hover {
-            background-position: right center;
-            color: #fff;
-        }
-
-        .btn-primary {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-secondary {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-success {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-danger {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-info {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .btn-warning {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-            color: #ffffff;
-        }
-
-        .btn-youtube {
-            background-image: linear-gradient(135deg, #00152A, #005580, #2E8EB8, #B4D3E9);
-        }
-
-        .logo-container {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            display: flex;
-            align-items: center;
-            z-index: 9999;
-        }
-
-        .logo-container img {
-            width: 30px;
-            height: 30px;
-            margin-right: 5px;
-            cursor: pointer;
-        }
-
-        .logo-container h2 {
-            color: #fff;
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            margin: 0;
-        }
-
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: rgb(31, 37, 129);
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            color: #ffffff;
-        }
-
-        .popup-content {
-            text-align: center;
-        }
-
-        .popup-content h1 {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .popup-content p {
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .join-group-btn {
-            background-color: #81D4FA;
-            color: #000000;
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            color: #ffffff;
-            font-size: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .popup {
-                width: 80%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                right: auto;
-            }
-
-            .main-container {
-                padding: 30px 20px;
-                max-width: none;
-            }
-
-            .btn {
-                padding: 15px 0;
-            }
-        }
-    </style>
-
-    <title>binnichtaktiv</title>
-</head>
-
-<body>
-
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <h1>Join my Telegram Group!</h1>
-            <p>
-                YOU can request apps to be automatically updated when a new version is released in the AppStore.
-                Or you can request apps to be hacked. More bots and features are already in development. Let me know what you think! 👇🏻
-            </p>
-            <p>
-                (All iPAs in my group are without this popup)
-            </p>
-
-            <a href="https://linkjar.co/binnichtaktiv" target="_blank" class="btn join-group-btn">Join Group</a>
-        </div>
-        <span class="close-btn" onclick="closePopup()">X</span>
-    </div>
-
-    <div class="main-container">
-        <img src="https://dbstaff.cc/image/profile-pictures/2.webp" alt="appdb Staff" class="profile-image">
-        <h2 class="username">@binnichtaktiv</h2>
-        <a href="appdb" class="btn btn-secondary">AppDB</a>
-        <a href="certs" class="btn btn-secondary">Certificates</a>
-        <a href="devacc" class="btn btn-primary">Developer Accounts</a>
-        <a href="contact" class="btn btn-success">Contact Me</a>
-        <a target="_blank" href="tutorials" class="btn btn-warning">Sideloading / Appdb Tutorials</a>
-        <a href="github" class="btn btn-secondary">GitHub</a>
-        <a href="useful-links" class="btn btn-warning">Useful Links</a>
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-        <script type='text/javascript'>kofiwidget2.init('Support Me ', '#7b00e0', 'I3I4LJ8FI'); kofiwidget2.draw();</script>
-    </div>
-
+  <body style="overflow: auto">
+    
+    <div id="app"></div>
+    
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById('popup').style.display = 'block';
-            if (isMobile()) {
-                adjustPopupForMobile();
+      
+    window.$docsify = {
+      name: 'iOS Cracking Docs',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 4,
+      loadNavbar: true,
+      sidebarDisplayLevel: 1, // set sidebar display level
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md',
+    },
+      timeUpdater: {
+      text: ">last update time: {docsify-updated}",
+      formatUpdated: "{YYYY}/{MM}/{DD}",
+      whereToPlace: "top",  // "top" or "bottom", default to "bottom"
+    },
+      themeable: {
+          readyTransition : true, // default
+          responsiveTables: true  // default
+      },
+      darklightTheme: {
+            defaultTheme : 'dark',
+            bodyFontSize : '17px',
+            dark: {
+                accent: '#A6BCCE',
+                toogleBackground : '#ffffff',
+                background: '#202124',
+                textColor: '#A6BCCE',
+                codeTextColor : '#ffffff',
+                codeBackgroundColor : '#1C1E1F',
+                borderColor : '#0d2538',
+                blockQuoteColor : '#9B8966',
+                highlightColor : '#DC418A',
+                sidebarSublink : '#b4b4b4',
+                codeTypeColor : '#ffffff',
+                coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+                toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
+            },
+            light: {
+                accent: '#42b983',
+                toogleBackground : '#091a28',
+                background: '#ffffff',
+                textColor: '#34495e',
+                codeTextColor : '#525252',
+                codeBackgroundColor : '#f8f8f8',
+                borderColor : 'rgba(0, 0, 0, 0.07)',
+                blockQuoteColor : '#858585',
+                highlightColor : '#d22778',
+                sidebarSublink : '#b4b4b4',
+                codeTypeColor : '#091a28',
+                coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+                toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
             }
-        });
+        },
+        linkpreview: {
+      key: "41e5a1d186e7fd4d60546ecaee434b46",
+    },  
+          tabs: {
+        persist    : true,      // default
+        sync       : true,      // default
+        theme      : 'classic', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
+      },
+      count:{
+    countable: false,
+    position: 'top',
+    margin: '10px',
+    float: 'right',
+    fontsize:'1em',
+    color:'rgb(210,39,120)',
+    language:'english',
+    localization: {
+      words: "",
+      minute: ""
+    },
+    isExpected: true
+  },
+  auto2top: true,
+    }
 
-        function isMobile() {
-            return window.innerWidth <= 768;
-        }
 
-        function adjustPopupForMobile() {
-            var popup = document.getElementById('popup');
-            popup.style.width = '80%';
-            popup.style.left = '50%';
-            popup.style.top = '50%';
-            popup.style.transform = 'translate(-50%, -50%)';
-            popup.style.right = 'auto';
-        }
 
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
+
+    
+  
     </script>
-</body>
+
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <!--<script
+    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js"
+    type="text/javascript">
+</script>
+
+<script
+    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"
+    type="text/javascript">
+</script>-->
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://unpkg.com/docsify-copy-code"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-chat/lib/docsify-chat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pangu/lib/pangu.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js" type="text/javascript">
+    </script>
+  </body>
 </html>
