@@ -34,9 +34,11 @@
       subMaxLevel: 4,
       loadNavbar: true,
       sidebarDisplayLevel: 1, // set sidebar display level
+      basePath: '/enhancement-tutorials/',
       alias: {
-      '/.*/_sidebar.md': '/_sidebar.md',
-    },
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/enhancement-tutorials/.*/_sidebar.md': '/enhancement-tutorials/_sidebar.md'
+      },
       timeUpdater: {
       text: ">last update time: {docsify-updated}",
       formatUpdated: "{YYYY}/{MM}/{DD}",
