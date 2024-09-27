@@ -1,5 +1,4 @@
-{
-    "other_useful_stuff": [
+[
       {
         "button_link": "https://github.com/asdfzxcvbn/pyzule",
         "button_text": "Pyzule",
@@ -51,5 +50,3 @@
         "text": "Track your playtime on PS4 - you can use the normal PS4 app from the AppStore too."
       }
     ]
-  }
-  
