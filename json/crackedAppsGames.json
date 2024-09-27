@@ -1,0 +1,54 @@
+{
+    "macOS_sites": [
+      {
+        "button_link": "https://www.minorpatch.com",
+        "button_text": "Minorpatch",
+        "text": "Best website for macOS apps in my opinion."
+      },
+      {
+        "button_link": "https://macdrop.net",
+        "button_text": "MacDrop",
+        "text": "For macOS apps but sometimes not working, at least for me."
+      },
+      {
+        "button_link": "https://www.torrentmac.net",
+        "button_text": "Mac Torrents",
+        "text": "Free Apps, Games & Plugins."
+      },
+      {
+        "button_link": "https://nmac.to",
+        "button_text": "NMac",
+        "text": "Mac OS X Applications Archives."
+      }
+    ],
+    "macOS_Windows_sites": [
+      {
+        "button_link": "https://filecr.com/en",
+        "button_text": "FileCR",
+        "text": "Download free Windows & macOS software, Android Apps & Games, E-Learning Videos & E-Books, PC Games, Scripts and much more."
+      }
+    ],
+    "Windows_sites": [
+      {
+        "button_link": "https://lrepacks.net",
+        "button_text": "LRepacks",
+        "text": "Download free repacks for Windows."
+      },
+      {
+        "button_link": "https://getintopc.com",
+        "button_text": "Get Into PC",
+        "text": "Download your desired app for free."
+      },
+      {
+        "button_link": "https://fitgirl-repacks.site",
+        "button_text": "FitGirl Repacks",
+        "text": "Best and trusted site for game repacks for Windows."
+      },
+      {
+        "button_link": "https://www.skidrowreloaded.com",
+        "button_text": "Skidrow & Reloaded Games",
+        "text": "Another good site for free games for Windows."
+      }
+    ]
+  }
+  
