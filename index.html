@@ -3264,7 +3264,7 @@ function showDiscordUsernamePopup() {
           
 <script>
     async function loadCountries() {
-        const response = await fetch('https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/refs/heads/main/json/countries.json');
+        const response = await fetch('https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/refs/heads/main/countries.json');
         const data = await response.json();
         return data.countries;
     }
@@ -3316,7 +3316,6 @@ function showDiscordUsernamePopup() {
               message = "Probably sleeping at the moment";
           }
       }
-      
 
         myClockElement.textContent = timeString;
 
