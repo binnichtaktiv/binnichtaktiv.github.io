@@ -1,0 +1,974 @@
+{
+    "countries": [
+        {
+            "name": "Afghanistan",
+            "emoji": "🇦🇫",
+            "timezones": ["Asia/Kabul"]
+        },
+        {
+            "name": "Albania",
+            "emoji": "🇦🇱",
+            "timezones": ["Europe/Tirane"]
+        },
+        {
+            "name": "Algeria",
+            "emoji": "🇩🇿",
+            "timezones": ["Africa/Algiers"]
+        },
+        {
+            "name": "Andorra",
+            "emoji": "🇦🇩",
+            "timezones": ["Europe/Andorra"]
+        },
+        {
+            "name": "Angola",
+            "emoji": "🇦🇴",
+            "timezones": ["Africa/Luanda"]
+        },
+        {
+            "name": "Antigua and Barbuda",
+            "emoji": "🇦🇬",
+            "timezones": ["America/Antigua"]
+        },
+        {
+            "name": "Argentina",
+            "emoji": "🇦🇷",
+            "timezones": ["America/Argentina/Buenos_Aires", "America/Argentina/Cordoba", "America/Argentina/Salta", "America/Argentina/Jujuy", "America/Argentina/La_Rioja", "America/Argentina/San_Juan", "America/Argentina/Mendoza", "America/Argentina/Tucuman"]
+        },
+        {
+            "name": "Armenia",
+            "emoji": "🇦🇲",
+            "timezones": ["Asia/Yerevan"]
+        },
+        {
+            "name": "Australia",
+            "emoji": "🇦🇺",
+            "timezones": ["Australia/Adelaide", "Australia/Brisbane", "Australia/Darwin", "Australia/Hobart", "Australia/Lindeman", "Australia/Melbourne", "Australia/Perth", "Australia/Sydney"]
+        },
+        {
+            "name": "Austria",
+            "emoji": "🇦🇹",
+            "timezones": ["Europe/Vienna"]
+        },
+        {
+            "name": "Azerbaijan",
+            "emoji": "🇦🇿",
+            "timezones": ["Asia/Baku"]
+        },
+        {
+            "name": "Bahamas",
+            "emoji": "🇧🇸",
+            "timezones": ["America/Nassau"]
+        },
+        {
+            "name": "Bahrain",
+            "emoji": "🇧🇭",
+            "timezones": ["Asia/Bahrain"]
+        },
+        {
+            "name": "Bangladesh",
+            "emoji": "🇧🇩",
+            "timezones": ["Asia/Dhaka"]
+        },
+        {
+            "name": "Barbados",
+            "emoji": "🇧🇧",
+            "timezones": ["America/Barbados"]
+        },
+        {
+            "name": "Belarus",
+            "emoji": "🇧🇾",
+            "timezones": ["Europe/Minsk"]
+        },
+        {
+            "name": "Belgium",
+            "emoji": "🇧🇪",
+            "timezones": ["Europe/Brussels"]
+        },
+        {
+            "name": "Belize",
+            "emoji": "🇧🇿",
+            "timezones": ["America/Belize"]
+        },
+        {
+            "name": "Benin",
+            "emoji": "🇧🇯",
+            "timezones": ["Africa/Porto-Novo"]
+        },
+        {
+            "name": "Bhutan",
+            "emoji": "🇧🇹",
+            "timezones": ["Asia/Thimphu"]
+        },
+        {
+            "name": "Bolivia",
+            "emoji": "🇧🇴",
+            "timezones": ["America/La_Paz"]
+        },
+        {
+            "name": "Bosnia and Herzegovina",
+            "emoji": "🇧🇦",
+            "timezones": ["Europe/Sarajevo"]
+        },
+        {
+            "name": "Botswana",
+            "emoji": "🇧🇼",
+            "timezones": ["Africa/Gaborone"]
+        },
+        {
+            "name": "Brazil",
+            "emoji": "🇧🇷",
+            "timezones": ["America/Acui", "America/Alagoas", "America/Acre", "America/Belem", "America/Brasilia", "America/Campo_Grande", "America/Cuiaba", "America/Eirunepe", "America/Maceio", "America/Manaus", "America/Noronha", "America/Porto_Velho", "America/Recife", "America/Rio_Branco", "America/Sao_Paulo"]
+        },
+        {
+            "name": "Brunei",
+            "emoji": "🇧🇳",
+            "timezones": ["Asia/Brunei"]
+        },
+        {
+            "name": "Bulgaria",
+            "emoji": "🇧🇬",
+            "timezones": ["Europe/Sofia"]
+        },
+        {
+            "name": "Burkina Faso",
+            "emoji": "🇧🇫",
+            "timezones": ["Africa/Ouagadougou"]
+        },
+        {
+            "name": "Burundi",
+            "emoji": "🇧🇮",
+            "timezones": ["Africa/Bujumbura"]
+        },
+        {
+            "name": "Cabo Verde",
+            "emoji": "🇨🇻",
+            "timezones": ["Atlantic/Cape_Verde"]
+        },
+        {
+            "name": "Cambodia",
+            "emoji": "🇰🇭",
+            "timezones": ["Asia/Phnom_Penh"]
+        },
+        {
+            "name": "Cameroon",
+            "emoji": "🇨🇲",
+            "timezones": ["Africa/Douala"]
+        },
+        {
+            "name": "Canada",
+            "emoji": "🇨🇦",
+            "timezones": ["America/Atikokan", "America/Blanc-Sablon", "America/Calgary", "America/Edmonton", "America/Halifax", "America/Moncton", "America/North_Dakota/Center", "America/Regina", "America/Saskatchewan", "America/Toronto", "America/Vancouver", "America/Winnipeg"]
+        },
+        {
+            "name": "Central African Republic",
+            "emoji": "🇨🇫",
+            "timezones": ["Africa/Bangui"]
+        },
+        {
+            "name": "Chad",
+            "emoji": "🇹🇩",
+            "timezones": ["Africa/N'Djamena"]
+        },
+        {
+            "name": "Chile",
+            "emoji": "🇨🇱",
+            "timezones": ["America/Santiago", "America/Punta_Arenas", "Pacific/Easter"]
+        },
+        {
+            "name": "China",
+            "emoji": "🇨🇳",
+            "timezones": ["Asia/Shanghai", "Asia/Urumqi"]
+        },
+        {
+            "name": "Colombia",
+            "emoji": "🇨🇴",
+            "timezones": ["America/Bogota"]
+        },
+        {
+            "name": "Comoros",
+            "emoji": "🇰🇲",
+            "timezones": ["Indian/Comoro"]
+        },
+        {
+            "name": "Congo",
+            "emoji": "🇨🇬",
+            "timezones": ["Africa/Brazzaville"]
+        },
+        {
+            "name": "Congo (Democratic Republic)",
+            "emoji": "🇨🇩",
+            "timezones": ["Africa/Kinshasa", "Africa/Lubumbashi"]
+        },
+        {
+            "name": "Costa Rica",
+            "emoji": "🇨🇷",
+            "timezones": ["America/Costa_Rica"]
+        },
+        {
+            "name": "Croatia",
+            "emoji": "🇭🇷",
+            "timezones": ["Europe/Zagreb"]
+        },
+        {
+            "name": "Cuba",
+            "emoji": "🇨🇺",
+            "timezones": ["America/Havana"]
+        },
+        {
+            "name": "Cyprus",
+            "emoji": "🇨🇾",
+            "timezones": ["Asia/Nicosia", "Europe/Nicosia"]
+        },
+        {
+            "name": "Czech Republic",
+            "emoji": "🇨🇿",
+            "timezones": ["Europe/Prague"]
+        },
+        {
+            "name": "Denmark",
+            "emoji": "🇩🇰",
+            "timezones": ["Europe/Copenhagen"]
+        },
+        {
+            "name": "Djibouti",
+            "emoji": "🇩🇯",
+            "timezones": ["Africa/Djibouti"]
+        },
+        {
+            "name": "Dominica",
+            "emoji": "🇩🇲",
+            "timezones": ["America/Dominica"]
+        },
+        {
+            "name": "Dominican Republic",
+            "emoji": "🇩🇴",
+            "timezones": ["America/Santo_Domingo"]
+        },
+        {
+            "name": "Ecuador",
+            "emoji": "🇪🇨",
+            "timezones": ["America/Guayaquil", "Pacific/Galapagos"]
+        },
+        {
+            "name": "Egypt",
+            "emoji": "🇪🇬",
+            "timezones": ["Africa/Cairo"]
+        },
+        {
+            "name": "El Salvador",
+            "emoji": "🇸🇻",
+            "timezones": ["America/El_Salvador"]
+        },
+        {
+            "name": "Equatorial Guinea",
+            "emoji": "🇬🇶",
+            "timezones": ["Africa/Malabo"]
+        },
+        {
+            "name": "Eritrea",
+            "emoji": "🇪🇷",
+            "timezones": ["Africa/Asmara"]
+        },
+        {
+            "name": "Estonia",
+            "emoji": "🇪🇪",
+            "timezones": ["Europe/Tallinn"]
+        },
+        {
+            "name": "Eswatini",
+            "emoji": "🇸🇿",
+            "timezones": ["Africa/Mbabane"]
+        },
+        {
+            "name": "Ethiopia",
+            "emoji": "🇪🇹",
+            "timezones": ["Africa/Addis_Ababa"]
+        },
+        {
+            "name": "Fiji",
+            "emoji": "🇫🇯",
+            "timezones": ["Pacific/Fiji"]
+        },
+        {
+            "name": "Finland",
+            "emoji": "🇫🇮",
+            "timezones": ["Europe/Helsinki"]
+        },
+        {
+            "name": "France",
+            "emoji": "🇫🇷",
+            "timezones": ["Europe/Paris"]
+        },
+        {
+            "name": "Gabon",
+            "emoji": "🇬🇦",
+            "timezones": ["Africa/Libreville"]
+        },
+        {
+            "name": "Gambia",
+            "emoji": "🇬🇲",
+            "timezones": ["Africa/Banjul"]
+        },
+        {
+            "name": "Georgia",
+            "emoji": "🇬🇪",
+            "timezones": ["Asia/Tbilisi"]
+        },
+        {
+            "name": "Germany",
+            "emoji": "🇩🇪",
+            "timezones": ["Europe/Berlin"]
+        },
+        {
+            "name": "Ghana",
+            "emoji": "🇬🇭",
+            "timezones": ["Africa/Accra"]
+        },
+        {
+            "name": "Greece",
+            "emoji": "🇬🇷",
+            "timezones": ["Europe/Athens"]
+        },
+        {
+            "name": "Grenada",
+            "emoji": "🇬🇩",
+            "timezones": ["America/Grenada"]
+        },
+        {
+            "name": "Guatemala",
+            "emoji": "🇬🇹",
+            "timezones": ["America/Guatemala"]
+        },
+        {
+            "name": "Guinea",
+            "emoji": "🇬🇳",
+            "timezones": ["Africa/Conakry"]
+        },
+        {
+            "name": "Guinea-Bissau",
+            "emoji": "🇬🇼",
+            "timezones": ["Africa/Bissau"]
+        },
+        {
+            "name": "Guyana",
+            "emoji": "🇬🇾",
+            "timezones": ["America/Guyana"]
+        },
+        {
+            "name": "Haiti",
+            "emoji": "🇭🇹",
+            "timezones": ["America/Port-au-Prince"]
+        },
+        {
+            "name": "Honduras",
+            "emoji": "🇭🇳",
+            "timezones": ["America/Tegucigalpa"]
+        },
+        {
+            "name": "Hungary",
+            "emoji": "🇭🇺",
+            "timezones": ["Europe/Budapest"]
+        },
+        {
+            "name": "Iceland",
+            "emoji": "🇮🇸",
+            "timezones": ["Atlantic/Reykjavik"]
+        },
+        {
+            "name": "India",
+            "emoji": "🇮🇳",
+            "timezones": ["Asia/Kolkata"]
+        },
+        {
+            "name": "Indonesia",
+            "emoji": "🇮🇩",
+            "timezones": ["Asia/Jakarta", "Asia/Makassar", "Asia/Jayapura"]
+        },
+        {
+            "name": "Iran",
+            "emoji": "🇮🇷",
+            "timezones": ["Asia/Tehran"]
+        },
+        {
+            "name": "Iraq",
+            "emoji": "🇮🇶",
+            "timezones": ["Asia/Baghdad"]
+        },
+        {
+            "name": "Ireland",
+            "emoji": "🇮🇪",
+            "timezones": ["Europe/Dublin"]
+        },
+        {
+            "name": "Israel",
+            "emoji": "🇮🇱",
+            "timezones": ["Asia/Jerusalem"]
+        },
+        {
+            "name": "Italy",
+            "emoji": "🇮🇹",
+            "timezones": ["Europe/Rome"]
+        },
+        {
+            "name": "Jamaica",
+            "emoji": "🇯🇲",
+            "timezones": ["America/Jamaica"]
+        },
+        {
+            "name": "Japan",
+            "emoji": "🇯🇵",
+            "timezones": ["Asia/Tokyo"]
+        },
+        {
+            "name": "Jordan",
+            "emoji": "🇯🇴",
+            "timezones": ["Asia/Amman"]
+        },
+        {
+            "name": "Kazakhstan",
+            "emoji": "🇰🇿",
+            "timezones": ["Asia/Almaty", "Asia/Aqtau", "Asia/Aqtobe", "Asia/Oral"]
+        },
+        {
+            "name": "Kenya",
+            "emoji": "🇰🇪",
+            "timezones": ["Africa/Nairobi"]
+        },
+        {
+            "name": "Kiribati",
+            "emoji": "🇰🇷",
+            "timezones": ["Pacific/Kiritimati", "Pacific/Tarawa"]
+        },
+        {
+            "name": "Kuwait",
+            "emoji": "🇰🇼",
+            "timezones": ["Asia/Kuwait"]
+        },
+        {
+            "name": "Kyrgyzstan",
+            "emoji": "🇰🇬",
+            "timezones": ["Asia/Bishkek"]
+        },
+        {
+            "name": "Laos",
+            "emoji": "🇱🇦",
+            "timezones": ["Asia/Vientiane"]
+        },
+        {
+            "name": "Latvia",
+            "emoji": "🇱🇻",
+            "timezones": ["Europe/Riga"]
+        },
+        {
+            "name": "Lebanon",
+            "emoji": "🇱🇧",
+            "timezones": ["Asia/Beirut"]
+        },
+        {
+            "name": "Lesotho",
+            "emoji": "🇱🇸",
+            "timezones": ["Africa/Maseru"]
+        },
+        {
+            "name": "Liberia",
+            "emoji": "🇱🇷",
+            "timezones": ["Africa/Monrovia"]
+        },
+        {
+            "name": "Libya",
+            "emoji": "🇱🇾",
+            "timezones": ["Africa/Tripoli"]
+        },
+        {
+            "name": "Liechtenstein",
+            "emoji": "🇱🇮",
+            "timezones": ["Europe/Vaduz"]
+        },
+        {
+            "name": "Lithuania",
+            "emoji": "🇱🇹",
+            "timezones": ["Europe/Vilnius"]
+        },
+        {
+            "name": "Luxembourg",
+            "emoji": "🇱🇺",
+            "timezones": ["Europe/Luxembourg"]
+        },
+        {
+            "name": "Madagascar",
+            "emoji": "🇲🇬",
+            "timezones": ["Indian/Antananarivo"]
+        },
+        {
+            "name": "Malawi",
+            "emoji": "🇲🇼",
+            "timezones": ["Africa/Blantyre"]
+        },
+        {
+            "name": "Malaysia",
+            "emoji": "🇲🇾",
+            "timezones": ["Asia/Kuala_Lumpur", "Asia/Kuching"]
+        },
+        {
+            "name": "Maldives",
+            "emoji": "🇲🇻",
+            "timezones": ["Asia/Male"]
+        },
+        {
+            "name": "Mali",
+            "emoji": "🇲🇱",
+            "timezones": ["Africa/Bamako"]
+        },
+        {
+            "name": "Malta",
+            "emoji": "🇲🇹",
+            "timezones": ["Europe/Valletta"]
+        },
+        {
+            "name": "Marshall Islands",
+            "emoji": "🇲🇭",
+            "timezones": ["Pacific/Majuro", "Pacific/Kwajalein"]
+        },
+        {
+            "name": "Mauritania",
+            "emoji": "🇲🇦",
+            "timezones": ["Africa/Nouakchott"]
+        },
+        {
+            "name": "Mauritius",
+            "emoji": "🇲🇺",
+            "timezones": ["Indian/Mauritius"]
+        },
+        {
+            "name": "Mexico",
+            "emoji": "🇲🇽",
+            "timezones": ["America/Belize", "America/Cancun", "America/Hermosillo", "America/Merida", "America/Monterrey", "America/Matamoros", "America/Chihuahua", "America/Tijuana", "America/Guadalajara", "America/Mexico_City"]
+        },
+        {
+            "name": "Micronesia",
+            "emoji": "🇫🇲",
+            "timezones": ["Pacific/Chuuk", "Pacific/Pohnpei", "Pacific/Kosrae"]
+        },
+        {
+            "name": "Moldova",
+            "emoji": "🇲🇩",
+            "timezones": ["Europe/Chisinau"]
+        },
+        {
+            "name": "Monaco",
+            "emoji": "🇲🇨",
+            "timezones": ["Europe/Monaco"]
+        },
+        {
+            "name": "Mongolia",
+            "emoji": "🇲🇳",
+            "timezones": ["Asia/Ulaanbaatar", "Asia/Hovd", "Asia/Choibalsan"]
+        },
+        {
+            "name": "Montenegro",
+            "emoji": "🇲🇪",
+            "timezones": ["Europe/Podgorica"]
+        },
+        {
+            "name": "Morocco",
+            "emoji": "🇲🇦",
+            "timezones": ["Africa/Casablanca"]
+        },
+        {
+            "name": "Mozambique",
+            "emoji": "🇲🇿",
+            "timezones": ["Africa/Maputo"]
+        },
+        {
+            "name": "Myanmar",
+            "emoji": "🇲🇲",
+            "timezones": ["Asia/Yangon"]
+        },
+        {
+            "name": "Namibia",
+            "emoji": "🇳🇦",
+            "timezones": ["Africa/Windhoek"]
+        },
+        {
+            "name": "Nauru",
+            "emoji": "🇳🇷",
+            "timezones": ["Pacific/Nauru"]
+        },
+        {
+            "name": "Nepal",
+            "emoji": "🇳🇵",
+            "timezones": ["Asia/Kathmandu"]
+        },
+        {
+            "name": "Netherlands",
+            "emoji": "🇳🇱",
+            "timezones": ["Europe/Amsterdam"]
+        },
+        {
+            "name": "New Zealand",
+            "emoji": "🇳🇿",
+            "timezones": ["Pacific/Auckland", "Pacific/Chatham"]
+        },
+        {
+            "name": "Nicaragua",
+            "emoji": "🇳🇮",
+            "timezones": ["America/Managua"]
+        },
+        {
+            "name": "Niger",
+            "emoji": "🇳🇪",
+            "timezones": ["Africa/Niamey"]
+        },
+        {
+            "name": "Nigeria",
+            "emoji": "🇳🇬",
+            "timezones": ["Africa/Lagos"]
+        },
+        {
+            "name": "North Korea",
+            "emoji": "🇰🇵",
+            "timezones": ["Asia/Pyongyang"]
+        },
+        {
+            "name": "North Macedonia",
+            "emoji": "🇲🇰",
+            "timezones": ["Europe/Skopje"]
+        },
+        {
+            "name": "Norway",
+            "emoji": "🇳🇴",
+            "timezones": ["Europe/Oslo"]
+        },
+        {
+            "name": "Oman",
+            "emoji": "🇴🇲",
+            "timezones": ["Asia/Muscat"]
+        },
+        {
+            "name": "Pakistan",
+            "emoji": "🇵🇰",
+            "timezones": ["Asia/Karachi"]
+        },
+        {
+            "name": "Palau",
+            "emoji": "🇵🇼",
+            "timezones": ["Pacific/Palau"]
+        },
+        {
+            "name": "Palestine",
+            "emoji": "🇵🇸",
+            "timezones": ["Asia/Gaza", "Asia/Hebron"]
+        },
+        {
+            "name": "Panama",
+            "emoji": "🇵🇦",
+            "timezones": ["America/Panama"]
+        },
+        {
+            "name": "Papua New Guinea",
+            "emoji": "🇵🇬",
+            "timezones": ["Pacific/Port_Moresby"]
+        },
+        {
+            "name": "Paraguay",
+            "emoji": "🇵🇾",
+            "timezones": ["America/Asuncion"]
+        },
+        {
+            "name": "Peru",
+            "emoji": "🇵🇪",
+            "timezones": ["America/Lima"]
+        },
+        {
+            "name": "Philippines",
+            "emoji": "🇵🇭",
+            "timezones": ["Asia/Manila"]
+        },
+        {
+            "name": "Poland",
+            "emoji": "🇵🇱",
+            "timezones": ["Europe/Warsaw"]
+        },
+        {
+            "name": "Portugal",
+            "emoji": "🇵🇹",
+            "timezones": ["Europe/Lisbon", "Atlantic/Madeira", "Atlantic/Azores"]
+        },
+        {
+            "name": "Qatar",
+            "emoji": "🇶🇦",
+            "timezones": ["Asia/Qatar"]
+        },
+        {
+            "name": "Romania",
+            "emoji": "🇷🇴",
+            "timezones": ["Europe/Bucharest"]
+        },
+        {
+            "name": "Russia",
+            "emoji": "🇷🇺",
+            "timezones": ["Europe/Moscow", "Europe/Samara", "Asia/Kaliningrad", "Asia/Yekaterinburg", "Asia/Omsk", "Asia/Krasnoyarsk", "Asia/Irkutsk", "Asia/Vladivostok", "Asia/Magadan", "Asia/Kamchatka"]
+        },
+        {
+            "name": "Rwanda",
+            "emoji": "🇷🇼",
+            "timezones": ["Africa/Kigali"]
+        },
+        {
+            "name": "Saint Kitts and Nevis",
+            "emoji": "🇰🇳",
+            "timezones": ["America/St_Kitts"]
+        },
+        {
+            "name": "Saint Lucia",
+            "emoji": "🇱🇨",
+            "timezones": ["America/St_Lucia"]
+        },
+        {
+            "name": "Saint Vincent and the Grenadines",
+            "emoji": "🇻🇨",
+            "timezones": ["America/St_Vincent"]
+        },
+        {
+            "name": "Samoa",
+            "emoji": "🇼🇸",
+            "timezones": ["Pacific/Apia"]
+        },
+        {
+            "name": "San Marino",
+            "emoji": "🇸🇲",
+            "timezones": ["Europe/San_Marino"]
+        },
+        {
+            "name": "Sao Tome and Principe",
+            "emoji": "🇸🇹",
+            "timezones": ["Africa/Sao_Tome"]
+        },
+        {
+            "name": "Saudi Arabia",
+            "emoji": "🇸🇦",
+            "timezones": ["Asia/Riyadh"]
+        },
+        {
+            "name": "Senegal",
+            "emoji": "🇸🇳",
+            "timezones": ["Africa/Dakar"]
+        },
+        {
+            "name": "Serbia",
+            "emoji": "🇷🇸",
+            "timezones": ["Europe/Belgrade"]
+        },
+        {
+            "name": "Seychelles",
+            "emoji": "🇸🇨",
+            "timezones": ["Indian/Mahe"]
+        },
+        {
+            "name": "Sierra Leone",
+            "emoji": "🇸🇱",
+            "timezones": ["Africa/Freetown"]
+        },
+        {
+            "name": "Singapore",
+            "emoji": "🇸🇬",
+            "timezones": ["Asia/Singapore"]
+        },
+        {
+            "name": "Slovakia",
+            "emoji": "🇸🇰",
+            "timezones": ["Europe/Bratislava"]
+        },
+        {
+            "name": "Slovenia",
+            "emoji": "🇸🇮",
+            "timezones": ["Europe/Ljubljana"]
+        },
+        {
+            "name": "Solomon Islands",
+            "emoji": "🇸🇧",
+            "timezones": ["Pacific/Guadalcanal"]
+        },
+        {
+            "name": "Somalia",
+            "emoji": "🇸🇴",
+            "timezones": ["Africa/Mogadishu"]
+        },
+        {
+            "name": "South Africa",
+            "emoji": "🇿🇦",
+            "timezones": ["Africa/Johannesburg"]
+        },
+        {
+            "name": "South Korea",
+            "emoji": "🇰🇷",
+            "timezones": ["Asia/Seoul"]
+        },
+        {
+            "name": "South Sudan",
+            "emoji": "🇸🇸",
+            "timezones": ["Africa/Juba"]
+        },
+        {
+            "name": "Spain",
+            "emoji": "🇪🇸",
+            "timezones": ["Europe/Madrid"]
+        },
+        {
+            "name": "Sri Lanka",
+            "emoji": "🇱🇰",
+            "timezones": ["Asia/Colombo"]
+        },
+        {
+            "name": "Sudan",
+            "emoji": "🇸🇩",
+            "timezones": ["Africa/Khartoum"]
+        },
+        {
+            "name": "Suriname",
+            "emoji": "🇸🇷",
+            "timezones": ["America/Paramaribo"]
+        },
+        {
+            "name": "Sweden",
+            "emoji": "🇸🇪",
+            "timezones": ["Europe/Stockholm"]
+        },
+        {
+            "name": "Switzerland",
+            "emoji": "🇨🇭",
+            "timezones": ["Europe/Zurich"]
+        },
+        {
+            "name": "Syria",
+            "emoji": "🇸🇾",
+            "timezones": ["Asia/Damascus"]
+        },
+        {
+            "name": "Taiwan",
+            "emoji": "🇹🇼",
+            "timezones": ["Asia/Taipei"]
+        },
+        {
+            "name": "Tajikistan",
+            "emoji": "🇹🇯",
+            "timezones": ["Asia/Dushanbe"]
+        },
+        {
+            "name": "Tanzania",
+            "emoji": "🇹🇿",
+            "timezones": ["Africa/Dar_es_Salaam"]
+        },
+        {
+            "name": "Thailand",
+            "emoji": "🇹🇭",
+            "timezones": ["Asia/Bangkok"]
+        },
+        {
+            "name": "Togo",
+            "emoji": "🇹🇬",
+            "timezones": ["Africa/Lome"]
+        },
+        {
+            "name": "Tonga",
+            "emoji": "🇹🇴",
+            "timezones": ["Pacific/Tongatapu"]
+        },
+        {
+            "name": "Trinidad and Tobago",
+            "emoji": "🇹🇹",
+            "timezones": ["America/Port_of_Spain"]
+        },
+        {
+            "name": "Tunisia",
+            "emoji": "🇹🇳",
+            "timezones": ["Africa/Tunis"]
+        },
+        {
+            "name": "Turkey",
+            "emoji": "🇹🇷",
+            "timezones": ["Europe/Istanbul"]
+        },
+        {
+            "name": "Turkmenistan",
+            "emoji": "🇹🇲",
+            "timezones": ["Asia/Ashgabat"]
+        },
+        {
+            "name": "Tuvalu",
+            "emoji": "🇹🇻",
+            "timezones": ["Pacific/Funafuti"]
+        },
+        {
+            "name": "Uganda",
+            "emoji": "🇺🇬",
+            "timezones": ["Africa/Kampala"]
+        },
+        {
+            "name": "Ukraine",
+            "emoji": "🇺🇦",
+            "timezones": ["Europe/Kiev"]
+        },
+        {
+            "name": "United Arab Emirates",
+            "emoji": "🇦🇪",
+            "timezones": ["Asia/Dubai"]
+        },
+        {
+            "name": "United Kingdom",
+            "emoji": "🇬🇧",
+            "timezones": ["Europe/London"]
+        },
+        {
+            "name": "United States",
+            "emoji": "🇺🇸",
+            "timezones": ["America/New_York", "America/Chicago", "America/Denver", "America/Los_Angeles", "America/Anchorage", "America/Adak", "Pacific/Honolulu"]
+        },
+        {
+            "name": "Uruguay",
+            "emoji": "🇺🇾",
+            "timezones": ["America/Montevideo"]
+        },
+        {
+            "name": "Uzbekistan",
+            "emoji": "🇺🇿",
+            "timezones": ["Asia/Tashkent"]
+        },
+        {
+            "name": "Vanuatu",
+            "emoji": "🇻🇺",
+            "timezones": ["Pacific/Efate"]
+        },
+        {
+            "name": "Vatican City",
+            "emoji": "🇻🇦",
+            "timezones": ["Europe/Vatican"]
+        },
+        {
+            "name": "Venezuela",
+            "emoji": "🇻🇪",
+            "timezones": ["America/Caracas"]
+        },
+        {
+            "name": "Vietnam",
+            "emoji": "🇻🇳",
+            "timezones": ["Asia/Ho_Chi_Minh"]
+        },
+        {
+            "name": "Yemen",
+            "emoji": "🇾🇪",
+            "timezones": ["Asia/Aden"]
+        },
+        {
+            "name": "Zambia",
+            "emoji": "🇿🇲",
+            "timezones": ["Africa/Lusaka"]
+        },
+        {
+            "name": "Zimbabwe",
+            "emoji": "🇿🇼",
+            "timezones": ["Africa/Harare"]
+        }
+    ]
+}
