@@ -60,6 +60,13 @@
             width: 100px;
             height: 100px;
         }
+
+        .popup-icon {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: contain;
+        }
+
     </style>
 </head>
 <body>
@@ -80,7 +87,57 @@
             <a href="https://revolut.me/jonas2xn2" target="_blank">
                 <img src="../images/applepay.svg" alt="Apple Pay" class="large">
             </a>
+            
+            <a id="binance">
+                <img src="../images/binance.png" alt="Binance" class="large" style="width: 70px; height: 70px;">
+            </a>
         </div>
     </div>
+        
+    <script>
+        document.getElementById('binance').addEventListener('click', function() {
+            const popup = document.createElement('div');
+            popup.style.position = 'fixed';
+            popup.style.top = '50%';
+            popup.style.left = '50%';
+            popup.style.transform = 'translate(-50%, -50%) scale(0)';
+            popup.style.backgroundColor = '#101728';
+            popup.style.color = 'white';
+            popup.style.padding = '40px';
+            popup.style.borderRadius = '20px';
+            popup.style.textAlign = 'center';
+            popup.style.fontFamily = 'sans-serif';
+            popup.style.zIndex = '9999';
+            popup.style.width = '250px';
+            popup.style.border = '1px solid white';
+            popup.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+            popup.style.opacity = '0';
+    
+            const popupContent = document.createElement('div');
+            popupContent.innerHTML = `
+                <img src="https://duckduckgo.com/i/fd3246c8.png" alt="Icon" class="popup-icon">
+                <h2 style="font-size: 24px; margin-bottom: 20px;">My binance ID:<br><br>748789355</h2>
+                <p style="font-size: 18px; margin-bottom: 30px;">If you also have a Binance account, you can send me money free of charge using my <a href="https://www.binance.com/en/support/faq/how-to-send-crypto-to-users-with-binance-pay-b3fa3ae045b9429084203c3a4ff1362f" target="_blank">Binance ID</a></p>
+                <p style="font-size: 18px; margin-bottom: 30px;">If you don't have Binance, <a href="https://binnichtaktiv.github.io/" target="_blank">send me a message</a> so I can give you my wallet address.<br>I accept many cryptocurrencies.</p>
+                <button id="closePopup" style="background-color: white; color: #101728; padding: 14px 28px; border: none; cursor: pointer; border-radius: 20px; font-size: 16px; font-family: sans-serif;">OK</button>
+            `;
+            popup.appendChild(popupContent);
+            document.body.appendChild(popup);
+    
+            setTimeout(() => {
+                popup.style.transform = 'translate(-50%, -50%) scale(1)';
+                popup.style.opacity = '1';
+            }, 10);
+    
+            document.getElementById('closePopup').addEventListener('click', () => {
+                popup.style.transform = 'translate(-50%, -50%) scale(0)';
+                popup.style.opacity = '0';
+                setTimeout(() => {
+                    popup.remove();
+                }, 300);
+            });
+        });
+    </script>
+    
 </body>
 </html>
