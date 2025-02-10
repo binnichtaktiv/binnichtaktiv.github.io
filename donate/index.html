@@ -25,6 +25,7 @@
 
         .container {
             text-align: center;
+            padding: 0 20px;
         }
 
         h1 {
@@ -67,6 +68,57 @@
             object-fit: contain;
         }
 
+        @media screen and (max-width: 600px) {
+            .icons {
+                gap: 20px;
+            }
+
+            .icons img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .icons img.large {
+                width: 60px;
+                height: 60px;
+            }
+
+            .icons img[src="../images/paypal-whiteBG.svg"] {
+                width: 60px;
+                height: 60px;
+            }
+
+            .icons img[src="../images/binance.png"] {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .icons {
+                gap: 15px;
+            }
+
+            .icons img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .icons img.large {
+                width: 50px;
+                height: 50px;
+            }
+
+            .icons img[src="../images/paypal-whiteBG.svg"] {
+                width: 50px;
+                height: 50px;
+            }
+
+            .icons img[src="../images/binance.png"] {
+                width: 40px;
+                height: 40px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -77,15 +129,15 @@
         <div class="icons">
 
             <a href="https://paypal.me/binnichtaktiv" target="_blank">
-                <img src="../images/paypal-whiteBG.svg" alt="PayPal" style="width: 100px; height: 100px;">
+                <img src="../images/paypal-whiteBG.svg" alt="PayPal" style="width: 70px; height: 70px;">
             </a>
             
             <a href="https://ko-fi.com/binnichtaktiv" target="_blank">
-                <img src="../images/coffee.svg" alt="Buy Me a Coffee">
+                <img src="../images/coffee.svg" alt="Buy Me a Coffee" style="width: 70px; height: 70px;">
             </a>
 
             <a href="https://revolut.me/jonas2xn2" target="_blank">
-                <img src="../images/applepay.svg" alt="Apple Pay" class="large">
+                <img src="../images/applepay.svg" alt="Apple Pay" class="large" style="width: 100px; height: 100px;">
             </a>
             
             <a id="binance">
