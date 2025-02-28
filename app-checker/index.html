@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Availability Checker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 12px;
+            width: 320px;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #status, #results {
+            margin-top: 20px;
+        }
+        .country-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .country-list div {
+            width: 45%;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .country-list h2 {
+            color: #007bff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>App Availability Checker</h1>
+    <p>Enter an App ID to check availability in 175 countries. This may take a few minutes.</p>
+    <input type="text" id="appInput" placeholder="Enter App ID (e.g., 284882215)">
+    <button onclick="checkAvailability()">Check</button>
+    <div id="status"></div>
+    <div id="results"></div>
+
+    <script>
+        const countries = {
+            "af": "Afghanistan", "dz": "Algeria", "ar": "Argentina", "au": "Australia", "at": "Austria",
+            "by": "Belarus", "be": "Belgium", "ba": "Bosnia and Herzegovina", "bw": "Botswana", "br": "Brazil",
+            "bg": "Bulgaria", "kh": "Cambodia", "cm": "Cameroon", "ca": "Canada", "cl": "Chile", "cn": "China",
+            "co": "Colombia", "cd": "Democratic Republic of the Congo", "hr": "Croatia", "cy": "Cyprus",
+            "cz": "Czech Republic", "ci": "Ivory Coast", "dk": "Denmark", "do": "Dominican Republic",
+            "ec": "Ecuador", "eg": "Egypt", "ee": "Estonia", "fi": "Finland", "fr": "France", "ga": "Gabon",
+            "ge": "Georgia", "de": "Germany", "gr": "Greece", "hk": "Hong Kong", "hu": "Hungary",
+            "is": "Iceland", "in": "India", "id": "Indonesia", "iq": "Iraq", "ie": "Ireland", "il": "Israel",
+            "it": "Italy", "jp": "Japan", "jo": "Jordan", "kz": "Kazakhstan", "ke": "Kenya", "kr": "South Korea",
+            "xk": "Kosovo", "kw": "Kuwait", "lv": "Latvia", "lb": "Lebanon", "ly": "Libya", "lt": "Lithuania",
+            "lu": "Luxembourg", "mo": "Macau", "mw": "Malawi", "my": "Malaysia", "mv": "Maldives", "mx": "Mexico",
+            "me": "Montenegro", "ma": "Morocco", "mm": "Myanmar", "nr": "Nauru", "nl": "Netherlands",
+            "nz": "New Zealand", "ng": "Nigeria", "no": "Norway", "om": "Oman", "pk": "Pakistan", "pe": "Peru",
+            "ph": "Philippines", "pl": "Poland", "pt": "Portugal", "qa": "Qatar", "ro": "Romania", "ru": "Russia",
+            "rw": "Rwanda", "sa": "Saudi Arabia", "sn": "Senegal", "rs": "Serbia", "sg": "Singapore",
+            "sk": "Slovakia", "si": "Slovenia", "za": "South Africa", "es": "Spain", "se": "Sweden",
+            "ch": "Switzerland", "tw": "Taiwan", "tz": "Tanzania", "th": "Thailand", "to": "Tonga", "tn": "Tunisia",
+            "tr": "Turkey", "ug": "Uganda", "ua": "Ukraine", "ae": "United Arab Emirates", "gb": "United Kingdom",
+            "us": "United States", "uy": "Uruguay", "vu": "Vanuatu", "ve": "Venezuela", "vn": "Vietnam",
+            "zm": "Zambia", "zw": "Zimbabwe"
+        };
+
+        async function checkAvailability() {
+            const appId = document.getElementById('appInput').value.trim();
+            if (!appId || !/^\d+$/.test(appId)) {
+                document.getElementById('status').textContent = 'Please enter a valid App ID.';
+                return;
+            }
+
+            document.getElementById('status').textContent = 'Checking availability in 175 countries... This may take a few minutes.';
+            const availableCountries = [];
+            const unavailableCountries = [];
+            let checked = 0;
+            const totalCountries = Object.keys(countries).length;
+
+            for (const [code, name] of Object.entries(countries)) {
+                checked++;
+                document.getElementById('status').textContent = `Checking ${name} (${checked}/${totalCountries})...`;
+                const url = `https://itunes.apple.com/lookup?id=${appId}&country=${code}`;
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    if (data.resultCount > 0) {
+                        availableCountries.push(name);
+                    } else {
+                        unavailableCountries.push(name);
+                    }
+                } catch (error) {
+                    console.error(`Error checking ${name}:`, error);
+                    unavailableCountries.push(name);
+                }
+                await new Promise(resolve => setTimeout(resolve, 100));
+            }
+
+            document.getElementById('status').textContent = '';
+            document.getElementById('results').innerHTML = `
+                <div class="country-list">
+                    <div>
+                        <h2>Available in (${availableCountries.length}):</h2>
+                        <ul>${availableCountries.map(c => `<li>${c}</li>`).join('')}</ul>
+                    </div>
+                    <div>
+                        <h2>Not Available in (${unavailableCountries.length}):</h2>
+                        <ul>${unavailableCountries.map(c => `<li>${c}</li>`).join('')}</ul>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
