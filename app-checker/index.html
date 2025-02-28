@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Availability Checker</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/refs/heads/old/bna.ico" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/refs/heads/old/bna.ico" type="image/png" sizes="32x32">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -88,26 +90,42 @@
 
     <script>
         const countries = {
-            "af": "Afghanistan", "dz": "Algeria", "ar": "Argentina", "au": "Australia", "at": "Austria",
-            "by": "Belarus", "be": "Belgium", "ba": "Bosnia and Herzegovina", "bw": "Botswana", "br": "Brazil",
-            "bg": "Bulgaria", "kh": "Cambodia", "cm": "Cameroon", "ca": "Canada", "cl": "Chile", "cn": "China",
-            "co": "Colombia", "cd": "Democratic Republic of the Congo", "hr": "Croatia", "cy": "Cyprus",
-            "cz": "Czech Republic", "ci": "Ivory Coast", "dk": "Denmark", "do": "Dominican Republic",
-            "ec": "Ecuador", "eg": "Egypt", "ee": "Estonia", "fi": "Finland", "fr": "France", "ga": "Gabon",
-            "ge": "Georgia", "de": "Germany", "gr": "Greece", "hk": "Hong Kong", "hu": "Hungary",
-            "is": "Iceland", "in": "India", "id": "Indonesia", "iq": "Iraq", "ie": "Ireland", "il": "Israel",
-            "it": "Italy", "jp": "Japan", "jo": "Jordan", "kz": "Kazakhstan", "ke": "Kenya", "kr": "South Korea",
-            "xk": "Kosovo", "kw": "Kuwait", "lv": "Latvia", "lb": "Lebanon", "ly": "Libya", "lt": "Lithuania",
-            "lu": "Luxembourg", "mo": "Macau", "mw": "Malawi", "my": "Malaysia", "mv": "Maldives", "mx": "Mexico",
-            "me": "Montenegro", "ma": "Morocco", "mm": "Myanmar", "nr": "Nauru", "nl": "Netherlands",
-            "nz": "New Zealand", "ng": "Nigeria", "no": "Norway", "om": "Oman", "pk": "Pakistan", "pe": "Peru",
-            "ph": "Philippines", "pl": "Poland", "pt": "Portugal", "qa": "Qatar", "ro": "Romania", "ru": "Russia",
-            "rw": "Rwanda", "sa": "Saudi Arabia", "sn": "Senegal", "rs": "Serbia", "sg": "Singapore",
-            "sk": "Slovakia", "si": "Slovenia", "za": "South Africa", "es": "Spain", "se": "Sweden",
-            "ch": "Switzerland", "tw": "Taiwan", "tz": "Tanzania", "th": "Thailand", "to": "Tonga", "tn": "Tunisia",
-            "tr": "Turkey", "ug": "Uganda", "ua": "Ukraine", "ae": "United Arab Emirates", "gb": "United Kingdom",
-            "us": "United States", "uy": "Uruguay", "vu": "Vanuatu", "ve": "Venezuela", "vn": "Vietnam",
-            "zm": "Zambia", "zw": "Zimbabwe"
+            "af": "Afghanistan", "al": "Albania", "dz": "Algeria", "ao": "Angola", "ai": "Anguilla",
+            "ag": "Antigua and Barbuda", "ar": "Argentina", "am": "Armenia", "au": "Australia", "at": "Austria",
+            "az": "Azerbaijan", "bs": "Bahamas", "bh": "Bahrain", "bd": "Bangladesh", "bb": "Barbados",
+            "by": "Belarus", "be": "Belgium", "bz": "Belize", "bj": "Benin", "bm": "Bermuda",
+            "bt": "Bhutan", "bo": "Bolivia", "ba": "Bosnia and Herzegovina", "bw": "Botswana", "br": "Brazil",
+            "vg": "British Virgin Islands", "bn": "Brunei", "bg": "Bulgaria", "bf": "Burkina Faso", "kh": "Cambodia",
+            "cm": "Cameroon", "ca": "Canada", "cv": "Cape Verde", "ky": "Cayman Islands", "cl": "Chile",
+            "cn": "China", "co": "Colombia", "cd": "Democratic Republic of the Congo", "cr": "Costa Rica", "hr": "Croatia",
+            "cy": "Cyprus", "cz": "Czech Republic", "dk": "Denmark", "dm": "Dominica", "do": "Dominican Republic",
+            "ec": "Ecuador", "eg": "Egypt", "sv": "El Salvador", "ee": "Estonia", "fj": "Fiji",
+            "fi": "Finland", "fr": "France", "ga": "Gabon", "gm": "Gambia", "ge": "Georgia",
+            "de": "Germany", "gh": "Ghana", "gr": "Greece", "gd": "Grenada", "gt": "Guatemala",
+            "gn": "Guinea", "gw": "Guinea-Bissau", "gy": "Guyana", "ht": "Haiti", "hn": "Honduras",
+            "hk": "Hong Kong", "hu": "Hungary", "is": "Iceland", "in": "India", "id": "Indonesia",
+            "iq": "Iraq", "ie": "Ireland", "il": "Israel", "it": "Italy", "jm": "Jamaica",
+            "jp": "Japan", "jo": "Jordan", "kz": "Kazakhstan", "ke": "Kenya", "ki": "Kiribati",
+            "kw": "Kuwait", "kg": "Kyrgyzstan", "la": "Laos", "lv": "Latvia", "lb": "Lebanon",
+            "ls": "Lesotho", "lr": "Liberia", "lt": "Lithuania", "lu": "Luxembourg", "mo": "Macau",
+            "mk": "North Macedonia", "mg": "Madagascar", "mw": "Malawi", "my": "Malaysia", "mv": "Maldives",
+            "ml": "Mali", "mt": "Malta", "mr": "Mauritania", "mu": "Mauritius", "mx": "Mexico",
+            "fm": "Micronesia", "md": "Moldova", "mn": "Mongolia", "me": "Montenegro", "ms": "Montserrat",
+            "ma": "Morocco", "mz": "Mozambique", "mm": "Myanmar", "na": "Namibia", "nr": "Nauru",
+            "np": "Nepal", "nl": "Netherlands", "nz": "New Zealand", "ni": "Nicaragua", "ne": "Niger",
+            "ng": "Nigeria", "no": "Norway", "om": "Oman", "pk": "Pakistan", "pw": "Palau",
+            "pa": "Panama", "pg": "Papua New Guinea", "py": "Paraguay", "pe": "Peru", "ph": "Philippines",
+            "pl": "Poland", "pt": "Portugal", "qa": "Qatar", "ro": "Romania", "ru": "Russia",
+            "rw": "Rwanda", "kn": "Saint Kitts and Nevis", "lc": "Saint Lucia", "vc": "Saint Vincent and the Grenadines", "ws": "Samoa",
+            "st": "Sao Tome and Principe", "sa": "Saudi Arabia", "sn": "Senegal", "rs": "Serbia", "sc": "Seychelles",
+            "sl": "Sierra Leone", "sg": "Singapore", "sk": "Slovakia", "si": "Slovenia", "sb": "Solomon Islands",
+            "za": "South Africa", "kr": "South Korea", "es": "Spain", "lk": "Sri Lanka", "sd": "Sudan",
+            "sr": "Suriname", "sz": "Swaziland", "se": "Sweden", "ch": "Switzerland", "tw": "Taiwan",
+            "tj": "Tajikistan", "tz": "Tanzania", "th": "Thailand", "tl": "Timor-Leste", "tg": "Togo",
+            "to": "Tonga", "tt": "Trinidad and Tobago", "tn": "Tunisia", "tr": "Turkey", "tm": "Turkmenistan",
+            "tc": "Turks and Caicos Islands", "tv": "Tuvalu", "ug": "Uganda", "ua": "Ukraine", "ae": "United Arab Emirates",
+            "gb": "United Kingdom", "us": "United States", "uy": "Uruguay", "uz": "Uzbekistan", "vu": "Vanuatu",
+            "ve": "Venezuela", "vn": "Vietnam", "ye": "Yemen", "zm": "Zambia", "zw": "Zimbabwe"
         };
 
         async function checkAvailability() {
