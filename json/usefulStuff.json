@@ -48,5 +48,10 @@
         "button_link": "https://ps-timetracker.com",
         "button_text": "PS-Timetracker",
         "text": "Track your playtime on PS4 - you can use the normal PS4 app from the AppStore too."
+      },
+      {
+        "button_link": "https://github.com/binnichtaktiv/binnichtaktiv.github.io/raw/refs/heads/main/useful-links/tweaks.zip",
+        "button_text": "tweaks.zip",
+        "text": "Useful tweaks to modify / unlock apps (Sideloadbypass, auto-rc, auto-itunes, flex)"
       }
     ]
