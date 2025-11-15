@@ -1,0 +1,35 @@
+@font-face {
+   font-family: 'Quicksand';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 300;
+   src: url('file:///Volumes/WD%20External%20SSD/Extras/Netlify/websites/binnichtaktiv/fonts/Quicksand/300.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Quicksand';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 500;
+   src: url('file:///Volumes/WD%20External%20SSD/Extras/Netlify/websites/binnichtaktiv/fonts/Quicksand/500.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Quicksand';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 600;
+   src: url('file:///Volumes/WD%20External%20SSD/Extras/Netlify/websites/binnichtaktiv/fonts/Quicksand/600.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Quicksand';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 700;
+   src: url('file:///Volumes/WD%20External%20SSD/Extras/Netlify/websites/binnichtaktiv/fonts/Quicksand/700.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Quicksand';
+   font-style: regular;
+   font-display: swap;
+   font-weight: 400;
+   src: url('file:///Volumes/WD%20External%20SSD/Extras/Netlify/websites/binnichtaktiv/fonts/Quicksand/regular.ttf') format('truetype');
+}
