@@ -1578,6 +1578,90 @@ a {
 .cid-v2ERff3Qrm .panel-text {
   color: #bbbbbb;
 }
+.cid-v2ERff3Qrm .button-text-row {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 769px) {
+  .cid-v2ERff3Qrm .button-text-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .cid-v2ERff3Qrm .button-text-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.cid-v2ERff3Qrm .button-text-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.cid-v2ERff3Qrm .button-description {
+  color: #bbbbbb;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+@media (min-width: 769px) {
+  .cid-v2ERff3Qrm .button-description {
+    flex: 1;
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .cid-v2ERff3Qrm .button-description {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.cid-v2ERff3Qrm .ctm-button-small {
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(145deg, #2f3fbc, #c52ec2);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  color: #d3d3d3 !important;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+@media (min-width: 769px) {
+  .cid-v2ERff3Qrm .ctm-button-small {
+    flex-shrink: 0;
+  }
+}
+.cid-v2ERff3Qrm .ctm-button-small:hover {
+  background: linear-gradient(145deg, #2634a1, #a027a8);
+  box-shadow: 7px 7px 20px rgba(209, 18, 196, 0.733), -5px -5px 20px rgba(80, 31, 175, 0.5);
+  transform: scale(1.05) translateY(-2px);
+  transition: all 0.3s ease-in-out;
+  color: #d3d3d3 !important;
+  text-decoration: none;
+}
+.cid-v2ERff3Qrm .section-subtitle {
+  color: #9340ff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(147, 64, 255, 0.3);
+}
+.cid-v2ERff3Qrm .section-subtitle:first-child {
+  margin-top: 0;
+}
 .cid-v2EP8fz53Y {
   padding-top: 30px;
   padding-bottom: 30px;
