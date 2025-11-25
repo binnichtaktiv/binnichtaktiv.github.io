@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/refs/heads/old/bna.ico" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://raw.githubusercontent.com/binnichtaktiv/binnichtaktiv.github.io/refs/heads/old/bna.ico" type="image/png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Me</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(130deg, #010158 0%, #000066 100%);
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;            
+            font-family: 'CustomFont', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-bottom: 40px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .icons img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .icons img.large {
+            width: 100px;
+            height: 100px;
+        }
+
+        .popup-icon {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: contain;
+        }
+
+        @media screen and (max-width: 600px) {
+            .icons {
+                gap: 20px;
+            }
+
+            .icons img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .icons img.large {
+                width: 60px;
+                height: 60px;
+            }
+
+            .icons img[src="../images/paypal-whiteBG.svg"] {
+                width: 60px;
+                height: 60px;
+            }
+
+            .icons img[src="../images/binance.png"] {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .icons {
+                gap: 15px;
+            }
+
+            .icons img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .icons img.large {
+                width: 50px;
+                height: 50px;
+            }
+
+            .icons img[src="../images/paypal-whiteBG.svg"] {
+                width: 50px;
+                height: 50px;
+            }
+
+            .icons img[src="../images/binance.png"] {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support me</h1>
+        <p>Every donation helps</p>
+
+        <div class="icons">
+
+            <a href="https://paypal.me/binnichtaktiv" target="_blank">
+                <img src="../images/paypal-whiteBG.svg" alt="PayPal" style="width: 100px; height: 100px;">
+            </a>
+            
+            <a href="https://ko-fi.com/binnichtaktiv" target="_blank">
+                <img src="../images/coffee.svg" alt="Buy Me a Coffee" style="width: 70px; height: 70px;">
+            </a>
+
+            <a href="https://revolut.me/jonas2xn2" target="_blank">
+                <img src="../images/applepay.svg" alt="Apple Pay" class="large" style="width: 100px; height: 100px;">
+            </a>
+            
+            <a id="binance">
+                <img src="../images/binance.png" alt="Binance" class="large" style="width: 70px; height: 70px;">
+            </a>
+        </div>
+    </div>
+        
+    <script>
+        document.getElementById('binance').addEventListener('click', function() {
+            const popup = document.createElement('div');
+            popup.style.position = 'fixed';
+            popup.style.top = '50%';
+            popup.style.left = '50%';
+            popup.style.transform = 'translate(-50%, -50%) scale(0)';
+            popup.style.backgroundColor = '#101728';
+            popup.style.color = 'white';
+            popup.style.padding = '40px';
+            popup.style.borderRadius = '20px';
+            popup.style.textAlign = 'center';
+            popup.style.fontFamily = 'sans-serif';
+            popup.style.zIndex = '9999';
+            popup.style.width = '250px';
+            popup.style.border = '1px solid white';
+            popup.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+            popup.style.opacity = '0';
+    
+            const popupContent = document.createElement('div');
+            popupContent.innerHTML = `
+                <img src="https://duckduckgo.com/i/fd3246c8.png" alt="Icon" class="popup-icon">
+                <h2 style="font-size: 24px; margin-bottom: 20px;">My binance ID:<br><br>748789355</h2>
+                <p style="font-size: 18px; margin-bottom: 30px;">If you also have a Binance account, you can send me money free of charge using my <a href="https://www.binance.com/en/support/faq/how-to-send-crypto-to-users-with-binance-pay-b3fa3ae045b9429084203c3a4ff1362f" target="_blank">Binance ID</a></p>
+                <p style="font-size: 18px; margin-bottom: 30px;">If you don't have Binance, <a href="https://binnichtaktiv.github.io/" target="_blank">send me a message</a> so I can give you my wallet address.<br>I accept many cryptocurrencies.</p>
+                <button id="closePopup" style="background-color: white; color: #101728; padding: 14px 28px; border: none; cursor: pointer; border-radius: 20px; font-size: 16px; font-family: sans-serif;">OK</button>
+            `;
+            popup.appendChild(popupContent);
+            document.body.appendChild(popup);
+    
+            setTimeout(() => {
+                popup.style.transform = 'translate(-50%, -50%) scale(1)';
+                popup.style.opacity = '1';
+            }, 10);
+    
+            document.getElementById('closePopup').addEventListener('click', () => {
+                popup.style.transform = 'translate(-50%, -50%) scale(0)';
+                popup.style.opacity = '0';
+                setTimeout(() => {
+                    popup.remove();
+                }, 300);
+            });
+        });
+    </script>
+    
+</body>
+</html>
