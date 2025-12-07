@@ -1273,7 +1273,7 @@ a {
 }
 .cid-uXFRCKcSfp {
   padding-top: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 0rem;
   background: linear-gradient(0deg, #101728, #0f1728);
 }
 .cid-uXFRCKcSfp .row {
@@ -1402,9 +1402,24 @@ a {
   width: 90px;
   height: 90px;
 }
+.cid-uXFRCKcSfp .image-wrapper img {
+  transform: scale(1.4);
+  transform-origin: center center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .cid-uXFRCKcSfp .image-wrapper img {
+    transform: scale(1.6) translateX(2%);
+    transform-origin: center center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .cid-v2zhDGcSo8 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   background-color: #0f1728;
 }
 .cid-v2zhDGcSo8 .mbr-fallback-image.disabled {
@@ -1447,8 +1462,8 @@ a {
   color: #d3d3d3 !important;
 }
 .cid-v2EHELGp4U {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #0f1728;
 }
 .cid-v2EHELGp4U .mbr-fallback-image.disabled {
@@ -1550,27 +1565,52 @@ a {
   position: absolute;
   top: 0;
 }
+.cid-v2ERff3Qrm .card {
+  border: none;
+  margin-bottom: 20px;
+}
 .cid-v2ERff3Qrm .card .card-header {
-  background-color: transparent;
-  margin-bottom: 0;
+  background: linear-gradient(135deg, #121826, #1c2333);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cid-v2ERff3Qrm .card .card-header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 .cid-v2ERff3Qrm .panel-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+.cid-v2ERff3Qrm .panel-title-edit {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.3px;
+  flex: 1;
 }
 .cid-v2ERff3Qrm .mbr-iconfont {
-  padding-left: 1rem;
   font-family: 'Moririse2' !important;
   font-size: 1.4rem !important;
   color: #ffffff;
+  transition: transform 0.3s ease;
+}
+.cid-v2ERff3Qrm .card-header[aria-expanded="true"] .sign {
+  transform: rotate(180deg);
 }
 .cid-v2ERff3Qrm .panel-body,
 .cid-v2ERff3Qrm .card-header {
   padding: 1rem 0;
-}
-.cid-v2ERff3Qrm .panel-title-edit {
-  color: #ffffff;
 }
 .cid-v2ERff3Qrm .mbr-section-title {
   color: #9340ff;
@@ -3103,27 +3143,53 @@ a {
   position: absolute;
   top: 0;
 }
+.cid-v2EAzMwD4P .card {
+  border: none;
+  margin-bottom: 20px;
+}
 .cid-v2EAzMwD4P .card .card-header {
-  background-color: transparent;
-  margin-bottom: 0;
+  background: linear-gradient(135deg, rgba(18, 24, 38, 0.85), rgba(28, 35, 51, 0.85));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+.cid-v2EAzMwD4P .card .card-header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 .cid-v2EAzMwD4P .panel-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+.cid-v2EAzMwD4P .panel-title-edit {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+  color: #bebebe;
+  letter-spacing: 0.3px;
 }
 .cid-v2EAzMwD4P .mbr-iconfont {
   padding-left: 1rem;
-  font-family: 'Moririse2' !important;
+  font-family: "Moririse2" !important;
   font-size: 1.4rem !important;
   color: #ffffff;
+  transition: transform 0.3s ease;
+}
+.cid-v2EAzMwD4P .card-header[aria-expanded="true"] .sign {
+  transform: rotate(180deg);
 }
 .cid-v2EAzMwD4P .panel-body,
 .cid-v2EAzMwD4P .card-header {
   padding: 1rem 0;
-}
-.cid-v2EAzMwD4P .panel-title-edit {
-  color: #bebebe;
 }
 .cid-v2EAzMwD4P .mbr-section-title {
   color: #ffffff;
@@ -3751,7 +3817,7 @@ a {
   width: auto;
 }
 .cid-v2QqSR6uss #app-checker-block {
-  background: #18263c;
+  background: #20375c;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.13);
   padding: 30px 16px 24px 16px;
@@ -3823,7 +3889,4 @@ a {
 }
 .cid-v2EP8fz53Y H3 {
   color: #9340ff;
-}
-html, body {
-    background: #0f1728 !important;
 }
