@@ -1382,6 +1382,7 @@ a {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   background: transparent;
+  cursor: pointer;
 }
 .cid-uXFRCKcSfp .btn-social-img img {
   width: 100%;
@@ -1413,6 +1414,92 @@ a {
 .cid-uXFRCKcSfp .btn-social-discord {
   width: 90px;
   height: 90px;
+}
+.cid-uXFRCKcSfp .discord-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #101728;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  text-align: center;
+  min-width: 320px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cid-uXFRCKcSfp .discord-popup.active {
+  display: block;
+  animation: popupSlideIn 0.3s ease-out;
+}
+.cid-uXFRCKcSfp .discord-popup h3 {
+  color: #fff;
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.cid-uXFRCKcSfp .discord-popup p {
+  color: #d4d4d8;
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.cid-uXFRCKcSfp .discord-popup .close-btn {
+  background: linear-gradient(145deg, #2d5f3f, #1f4530);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(47, 95, 63, 0.4);
+}
+.cid-uXFRCKcSfp .discord-popup .close-btn:hover {
+  background: linear-gradient(145deg, #357f63, #2a5a46);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(47, 95, 63, 0.6);
+}
+.cid-uXFRCKcSfp .popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+}
+.cid-uXFRCKcSfp .popup-overlay.active {
+  display: block;
+}
+@keyframes popupSlideIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 480px) {
+  .cid-uXFRCKcSfp .discord-popup {
+    min-width: 300px;
+    padding: 30px;
+    margin: 20px;
+  }
+  .cid-uXFRCKcSfp .discord-popup h3 {
+    font-size: 18px;
+  }
+  .cid-uXFRCKcSfp .discord-popup p {
+    font-size: 15px;
+  }
 }
 .cid-v2zhDGcSo8 {
   padding-top: 2rem;

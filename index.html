@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=ZwJCaK"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=ZwJCaK" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=Twnqd4"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=Twnqd4" type="text/css">
 
   
   <style>
@@ -63,7 +63,7 @@ html, body {
 				</div>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="404.html">Support me</a></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="https://binnichtaktiv.github.io/enhancement-tutorials/" target="_blank">Enhancement Tutorials</a></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="https://odysee.com/@binnichtaktiv:a" target="_blank">Video Tutorials</a></li></ul>
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="https://binnichtaktiv.github.io/donate/">Support me</a></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="https://binnichtaktiv.github.io/enhancement-tutorials/" target="_blank">Enhancement Tutorials</a></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="https://odysee.com/@binnichtaktiv:a" target="_blank">Video Tutorials</a></li></ul>
 				
 				
 			</div>
@@ -83,28 +83,60 @@ html, body {
                 <img src="assets/images/terminal-2.png" alt="terminal">
             </div>
             <div class="col-12 col-md">
-               <div class="text-wrapper">
-                <div class="mbr-social-buttons">
-                    <a class="btn-social-img btn-social-github" href="#">
-                        <img src="assets/images/github.svg" alt="GitHub">
-                    </a>
-                    <a class="btn-social-img btn-social-reddit" href="#">
-                        <img src="assets/images/reddit.svg" alt="Reddit">
-                    </a>
-                    <a class="btn-social-img btn-social-twitter" href="#">
-                        <img src="assets/images/twitter.svg" alt="Twitter">
-                    </a>
-                    <a class="btn-social-img btn-social-telegram" href="#">
-                        <img src="assets/images/telegram.svg" alt="Telegram">
-                    </a>
-                    <a class="btn-social-img btn-social-discord" href="#">
-                        <img src="assets/images/discord.svg" alt="Discord">
-                    </a>
+                <div class="text-wrapper">
+                    <div class="mbr-social-buttons">
+                        <a class="btn-social-img btn-social-github" href="https://github.com/binnichtaktiv" target="_blank">
+                            <img src="assets/images/github.svg" alt="GitHub">
+                        </a>
+                        <a class="btn-social-img btn-social-reddit" href="https://www.reddit.com/user/Binnichtaktiv_" target="_blank">
+                            <img src="assets/images/reddit.svg" alt="Reddit">
+                        </a>
+                        <a class="btn-social-img btn-social-twitter" href="https://twitter.com/Binnichtaktiv06" target="_blank">
+                            <img src="assets/images/twitter.svg" alt="Twitter">
+                        </a>
+                        <a class="btn-social-img btn-social-telegram" href="https://t.me/binnichtaktiv" target="_blank">
+                            <img src="assets/images/telegram.svg" alt="Telegram">
+                        </a>
+                        <div class="btn-social-img btn-social-discord" onclick="showDiscordPopup()">
+                            <img src="assets/images/discord.svg" alt="Discord">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="discord-popup">
+        <h3>My discord is: <strong>binnichtaktiv</strong></h3>
+        <p>You can send me a friend request</p>
+        <button class="close-btn" onclick="hideDiscordPopup()">OK</button>
+    </div>
+    <div class="popup-overlay" onclick="hideDiscordPopup()"></div>
+
+    <script>
+    function showDiscordPopup() {
+        const popup = document.querySelector('.discord-popup');
+        const overlay = document.querySelector('.popup-overlay');
+        
+        popup.classList.add('active');
+        overlay.classList.add('active');
+        
+        document.onkeydown = function(e) {
+            if (e.key === 'Escape') hideDiscordPopup();
+        };
+    }
+
+    function hideDiscordPopup() {
+        const popup = document.querySelector('.discord-popup');
+        const overlay = document.querySelector('.popup-overlay');
+        
+        popup.classList.remove('active');
+        overlay.classList.remove('active');
+        
+        document.onkeydown = null;
+    }
+    </script>
+
 </section>
 
 <section data-bs-version="5.1" class="article11 cid-v2zhDGcSo8" id="article11-cf">
