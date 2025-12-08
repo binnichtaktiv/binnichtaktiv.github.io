@@ -1490,9 +1490,16 @@ a {
 }
 @media (max-width: 480px) {
   .cid-uXFRCKcSfp .discord-popup {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
     min-width: 300px;
+    width: calc(60vw);
+    max-width: 300px;
     padding: 30px;
-    margin: 20px;
+    margin: 0 !important;
+    box-sizing: border-box;
   }
   .cid-uXFRCKcSfp .discord-popup h3 {
     font-size: 18px;
