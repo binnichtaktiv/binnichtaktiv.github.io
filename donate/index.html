@@ -9,6 +9,20 @@
     <title>Support Me</title>
 
     <style>
+        html, body {
+          background-color: #0f1728 !important;
+          margin: 0;
+          padding: 0;
+          padding-top: env(safe-area-inset-top);
+          padding-bottom: env(safe-area-inset-bottom);
+        }
+
+        .mbr-section,
+        .container,
+        .container-fluid {
+          background-color: transparent !important;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -23,21 +37,25 @@
             font-family: 'CustomFont', sans-serif;
         }
 
+
         .container {
             text-align: center;
             padding: 0 20px;
         }
+
 
         h1 {
             font-size: 2.5rem;
             color: #ffffff;
         }
 
+
         p {
             font-size: 1.2rem;
             color: #ffffff;
             margin-bottom: 40px;
         }
+
 
         .icons {
             display: flex;
@@ -46,17 +64,21 @@
             gap: 40px;
         }
 
+
         .icons img {
             cursor: pointer;
             transition: transform 0.3s;
         }
 
+
         .icons img:hover {
             transform: scale(1.2);
         }
 
+
         .size100 { width: 100px; height: 100px; }
         .size70  { width: 70px; height: 70px; }
+
 
         .popup-icon {
             max-width: 200px;
@@ -64,15 +86,19 @@
             object-fit: contain;
         }
 
+
         @media screen and (max-width: 600px) {
             .icons { gap: 20px; }
+
 
             .size100 { width: 60px; height: 60px; }
             .size70  { width: 45px; height: 45px; }
         }
 
+
         @media screen and (max-width: 400px) {
             .icons { gap: 15px; }
+
 
             .size100 { width: 50px; height: 50px; }
             .size70  { width: 40px; height: 40px; }
@@ -84,7 +110,9 @@
         <h1>Support me</h1>
         <p>Every donation helps</p>
 
+
         <div class="icons">
+
 
             <a href="https://paypal.me/binnichtaktiv" target="_blank">
                 <img src="../assets/images/paypal.svg" alt="PayPal" class="size100">
@@ -94,6 +122,7 @@
                 <img src="../assets/images/coffee.svg" alt="Buy Me a Coffee" class="size70">
             </a>
 
+
             <a href="https://revolut.me/jonas2xn2" target="_blank">
                 <img src="../assets/images/applepay.svg" alt="Apple Pay" class="size100">
             </a>
@@ -101,6 +130,7 @@
             <a id="binance">
                 <img src="../assets/images/binance.png" alt="Binance" class="size70">
             </a>
+
 
         </div>
     </div>
