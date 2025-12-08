@@ -47,8 +47,6 @@
         }
 
         .icons img {
-            width: 60px;
-            height: 60px;
             cursor: pointer;
             transition: transform 0.3s;
         }
@@ -57,10 +55,9 @@
             transform: scale(1.2);
         }
 
-        .icons img.large {
-            width: 100px;
-            height: 100px;
-        }
+        /* Originalgrößen */
+        .size100 { width: 100px; height: 100px; }
+        .size70  { width: 70px; height: 70px; }
 
         .popup-icon {
             max-width: 200px;
@@ -69,55 +66,17 @@
         }
 
         @media screen and (max-width: 600px) {
-            .icons {
-                gap: 20px;
-            }
+            .icons { gap: 20px; }
 
-            .icons img {
-                width: 40px;
-                height: 40px;
-            }
-
-            .icons img.large {
-                width: 60px;
-                height: 60px;
-            }
-
-            .icons img[src="../images/paypal-whiteBG.svg"] {
-                width: 60px;
-                height: 60px;
-            }
-
-            .icons img[src="../images/binance.png"] {
-                width: 45px;
-                height: 45px;
-            }
+            .size100 { width: 60px; height: 60px; }
+            .size70  { width: 45px; height: 45px; }
         }
 
         @media screen and (max-width: 400px) {
-            .icons {
-                gap: 15px;
-            }
+            .icons { gap: 15px; }
 
-            .icons img {
-                width: 35px;
-                height: 35px;
-            }
-
-            .icons img.large {
-                width: 50px;
-                height: 50px;
-            }
-
-            .icons img[src="../images/paypal-whiteBG.svg"] {
-                width: 50px;
-                height: 50px;
-            }
-
-            .icons img[src="../images/binance.png"] {
-                width: 40px;
-                height: 40px;
-            }
+            .size100 { width: 50px; height: 50px; }
+            .size70  { width: 40px; height: 40px; }
         }
     </style>
 </head>
@@ -129,20 +88,21 @@
         <div class="icons">
 
             <a href="https://paypal.me/binnichtaktiv" target="_blank">
-                <img src="../images/paypal-whiteBG.svg" alt="PayPal" style="width: 100px; height: 100px;">
+                <img src="../assets/images/paypal.svg" alt="PayPal" class="size100">
             </a>
             
             <a href="https://ko-fi.com/binnichtaktiv" target="_blank">
-                <img src="../images/coffee.svg" alt="Buy Me a Coffee" style="width: 70px; height: 70px;">
+                <img src="../assets/images/coffee.svg" alt="Buy Me a Coffee" class="size70">
             </a>
 
             <a href="https://revolut.me/jonas2xn2" target="_blank">
-                <img src="../images/applepay.svg" alt="Apple Pay" class="large" style="width: 100px; height: 100px;">
+                <img src="../assets/images/applepay.svg" alt="Apple Pay" class="size100">
             </a>
             
             <a id="binance">
-                <img src="../images/binance.png" alt="Binance" class="large" style="width: 70px; height: 70px;">
+                <img src="../assets/images/binance.png" alt="Binance" class="size70">
             </a>
+
         </div>
     </div>
         
@@ -184,9 +144,7 @@
             document.getElementById('closePopup').addEventListener('click', () => {
                 popup.style.transform = 'translate(-50%, -50%) scale(0)';
                 popup.style.opacity = '0';
-                setTimeout(() => {
-                    popup.remove();
-                }, 300);
+                setTimeout(() => popup.remove(), 300);
             });
         });
     </script>
