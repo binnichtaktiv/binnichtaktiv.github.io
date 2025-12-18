@@ -137,19 +137,17 @@ html, body {
     }
     </script>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function() {
-      const params = new URLSearchParams(window.location.search);
-      const from = params.get("from");
-
-      if (from === "useful-links") {
-          const targetElement = document.getElementById("useful-links");
-          if (targetElement) {
-              targetElement.scrollIntoView({ behavior: "smooth" });
-          }
-      }
-  });
-  </script>
+	<script>
+	window.addEventListener("load", function () {
+	  const params = new URLSearchParams(window.location.search);
+	  if (params.get("from") === "useful-links") {
+	    const el = document.getElementById("useful-links");
+	    if (el) {
+	      el.scrollIntoView({ behavior: "smooth" });
+	    }
+	  }
+	});
+	</script>
 </section>
 
 <section data-bs-version="5.1" class="article11 cid-v2zhDGcSo8" id="article11-cf">
