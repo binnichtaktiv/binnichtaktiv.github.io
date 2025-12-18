@@ -137,6 +137,19 @@ html, body {
     }
     </script>
 
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const params = new URLSearchParams(window.location.search);
+      const from = params.get("from");
+
+      if (from === "useful-links") {
+          const targetElement = document.getElementById("useful-links");
+          if (targetElement) {
+              targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+      }
+  });
+  </script>
 </section>
 
 <section data-bs-version="5.1" class="article11 cid-v2zhDGcSo8" id="article11-cf">
@@ -189,7 +202,7 @@ html, body {
   
   
   
-  <div class="container">
+  <div class="container" id="useful-links">
     <div class="row justify-content-center">
       <div class="col-12 col-md-10">
         <div class="section-head align-center mb-4">
