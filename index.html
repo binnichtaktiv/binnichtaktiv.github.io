@@ -158,7 +158,7 @@ html, body {
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2"><strong><span style="color:#9340ff; font:inherit;">iPA library</span> that has always up to ​date iPAs without unnecessary ​tweaks injected</strong></h3>
+                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2"><strong><span style="color:#9340ff; font:inherit;">iPA library</span> that has always up to date iPAs without unnecessary tweaks injected</strong></h3>
                 <div class="mbr-section-btn align-center mt-4"><a class="btn btn-secondary ctm-button display-4" href="https://t.me/binnichtaktivsipas" target="_blank"><span class="socicon socicon-telegram mbr-iconfont mbr-iconfont-btn"></span>
                         Join Telegram Group
                     </a></div>
@@ -182,13 +182,11 @@ html, body {
 <section data-bs-version="5.1" class="article11 cid-v2E7DdjaYn" id="article11-cp">
     
 
-    
-    
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2"><strong>Sideload unlimited ​apps</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mt-4 display-7">Are you tired of blacklists and revokes or having ​to refresh your apps every 7 days? Register your ​UDID and get a signing certificate for ​sideloading. No jailbreak or computer required!</h4>
+                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2"><strong>Sideload unlimited apps</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mt-4 display-7">Are you tired of blacklists and revokes or having to refresh your apps every 7 days? Register your UDID and get a signing certificate for sideloading. No jailbreak or computer required!</h4>
                 <div class="mbr-section-btn align-center mt-4"><a class="btn btn-secondary ctm-button display-4" href="certs">
                         Get Signing Certificate</a></div>
             </div>
@@ -238,7 +236,7 @@ html, body {
             </a>
           </div>
           <div id="collapse2_5" class="panel-collapse noScroll collapse">
-            <div class="panel-body" data-json="/json/crackedAppsGames.json"></div>
+            <div class="panel-body" data-json="json/crackedAppsGames.json"></div>
           </div>
         </div>
 
@@ -255,7 +253,7 @@ html, body {
             </a>
           </div>
           <div id="collapse3_5" class="panel-collapse noScroll collapse">
-            <div class="panel-body" data-json="/json/streaming.json"></div>
+            <div class="panel-body" data-json="json/streaming.json"></div>
           </div>
         </div>
 
@@ -272,7 +270,7 @@ html, body {
             </a>
           </div>
           <div id="collapse4_5" class="panel-collapse noScroll collapse">
-            <div class="panel-body" data-json="/json/cheapStuff.json"></div>
+            <div class="panel-body" data-json="json/cheapStuff.json"></div>
           </div>
         </div>
 
@@ -289,7 +287,7 @@ html, body {
             </a>
           </div>
           <div id="collapse5_5" class="panel-collapse noScroll collapse">
-            <div class="panel-body" data-json="/json/usefulStuff.json"></div>
+            <div class="panel-body" data-json="json/usefulStuff.json"></div>
           </div>
         </div>
 
@@ -297,6 +295,73 @@ html, body {
     </div>
   </div>
 </div>
+
+  <script>
+  document.addEventListener('click', function (e) {
+    const trigger = e.target.closest('[data-toggle="collapse"], [data-bs-toggle="collapse"]');
+    if (!trigger) return;
+
+    const targetId = trigger.getAttribute('href');
+    if (!targetId || !targetId.startsWith('#')) return;
+
+    const panel = document.querySelector(
+      `${targetId} .panel-body[data-json]`
+    );
+
+    if (!panel || panel.dataset.loaded) return;
+
+    fetch(panel.dataset.json)
+      .then(r => {
+        if (!r.ok) throw new Error(r.status);
+        return r.json();
+      })
+      .then(data => {
+        renderPanel(panel, data);
+        panel.dataset.loaded = 'true';
+      })
+      .catch(err => console.error('JSON load failed:', panel.dataset.json, err));
+  });
+
+  function renderPanel(panel, data) {
+    panel.innerHTML = '';
+
+    if (isCategorized(data)) {
+      Object.entries(data).forEach(([category, items]) => {
+        const h = document.createElement('h5');
+        h.className = 'section-subtitle';
+        h.textContent = category.replace(/_/g, ' ');
+        panel.appendChild(h);
+
+        items.forEach(item => panel.appendChild(createRow(item)));
+      });
+    } else {
+      data.forEach(item => panel.appendChild(createRow(item)));
+    }
+  }
+
+  function createRow(item) {
+    const row = document.createElement('div');
+    row.className = 'button-text-row';
+
+    const a = document.createElement('a');
+    a.className = 'btn btn-secondary ctm-button-small';
+    a.href = item.button_link;
+    a.target = '_blank';
+    a.textContent = item.button_text;
+
+    const p = document.createElement('p');
+    p.className = 'button-description';
+    p.textContent = item.text;
+
+    row.appendChild(a);
+    row.appendChild(p);
+    return row;
+  }
+
+  function isCategorized(data) {
+    return typeof data === 'object' && !Array.isArray(data);
+  }
+  </script>
 </section>
 
 <section data-bs-version="5.1" class="footer7 cid-v2EP8fz53Y" once="footers" id="footer7-d9">
