@@ -25,6 +25,11 @@
         "text": "A feature-rich command-line audio/video downloader, use it without PC."
       },
       {
+        "button_link": "https://spotidownloader.com/ru11",
+        "button_text": "Spotify Downloader",
+        "text": "Download music from Spotify."
+      },
+      {
         "button_link": "https://github.com/binnichtaktiv/Deemix-Web-Version",
         "button_text": "Deemix",
         "text": "Download music from Deezer."
