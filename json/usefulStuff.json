@@ -1,62 +1,62 @@
 [
-      {
-        "button_link": "https://github.com/asdfzxcvbn/pyzule",
-        "button_text": "Pyzule",
-        "text": "An azule 'clone' written in Python3. A CLI tool used to inject iOS tweaks into jailed iOS apps."
-      },
-      {
-        "button_link": "https://coccoc.com/en",
-        "button_text": "Cốc Cốc browser",
-        "text": "Easily download any video from any website. For Windows and macOS."
-      },
-      {
-        "button_link": "https://apps.apple.com/us/app/aloha-browser-private-vpn/id1105317682",
-        "button_text": "Aloha browser",
-        "text": "Easily download almost any video from any website. For iOS."
-      },
-      {
-        "button_link": "https://github.com/yt-dlp/yt-dlp",
-        "button_text": "yt-dlp",
-        "text": "A feature-rich command-line audio/video downloader."
-      },
-      {
-        "button_link": "https://github.com/binnichtaktiv/yt-dlp-online",
-        "button_text": "yt-dlp online",
-        "text": "A feature-rich command-line audio/video downloader, use it without PC."
-      },
-      {
-        "button_link": "https://spotidownloader.com/ru11",
-        "button_text": "Spotify Downloader",
-        "text": "Download music from Spotify."
-      },
-      {
-        "button_link": "https://github.com/binnichtaktiv/Deemix-Web-Version",
-        "button_text": "Deemix",
-        "text": "Download music from Deezer."
-      },
-      {
-        "button_link": "https://t.me/binnichtaktivsipas/2/12349",
-        "button_text": "Blackhole",
-        "text": "Download music from YT Music, enable document browser, go to Blackhole in files and grab your downloaded song."
-      },
-      {
-        "button_link": "https://github.com/binnichtaktiv/Whisper-AI-online",
-        "button_text": "Whisper-AI-online",
-        "text": "Use Whisper AI online to transcribe your own audio files or videos from YouTube!"
-      },
-      {
-        "button_link": "https://www.onlyoffice.com/de/download-desktop.aspx",
-        "button_text": "ONLYOFFICE",
-        "text": "Good and free Microsoft Office alternative - better than Libre Office💩."
-      },
-      {
-        "button_link": "https://ps-timetracker.com",
-        "button_text": "PS-Timetracker",
-        "text": "Track your playtime on PS4 - you can use the normal PS4 app from the AppStore too."
-      },
-      {
-        "button_link": "https://github.com/binnichtaktiv/binnichtaktiv.github.io/raw/refs/heads/main/useful-links/tweaks.zip",
-        "button_text": "tweaks.zip",
-        "text": "Useful tweaks to modify / unlock apps (Sideloadbypass, auto-rc, auto-itunes, flex)"
-      }
-    ]
+  {
+    "button_link": "https://github.com/asdfzxcvbn/pyzule",
+    "button_text": "Pyzule",
+    "text": "An azule 'clone' written in Python3. A CLI tool used to inject iOS tweaks into jailed iOS apps."
+  },
+  {
+    "button_link": "https://coccoc.com/en",
+    "button_text": "Cốc Cốc browser",
+    "text": "Easily download any video from any website. For Windows and macOS."
+  },
+  {
+    "button_link": "https://apps.apple.com/us/app/aloha-browser-private-vpn/id1105317682",
+    "button_text": "Aloha browser",
+    "text": "Easily download almost any video from any website. For iOS."
+  },
+  {
+    "button_link": "https://github.com/yt-dlp/yt-dlp",
+    "button_text": "yt-dlp",
+    "text": "A feature-rich command-line audio/video downloader."
+  },
+  {
+    "button_link": "https://github.com/binnichtaktiv/yt-dlp-online",
+    "button_text": "yt-dlp online",
+    "text": "A feature-rich command-line audio/video downloader, use it without PC."
+  },
+  {
+    "button_link": "https://spotidownloader.com/ru11",
+    "button_text": "Spotify Downloader",
+    "text": "Download music from Spotify."
+  },
+  {
+    "button_link": "https://github.com/binnichtaktiv/Deemix-Web-Version",
+    "button_text": "Deemix",
+    "text": "Download music from Deezer."
+  },
+  {
+    "button_link": "https://t.me/binnichtaktivsipas/2/12349",
+    "button_text": "Blackhole",
+    "text": "Download music from YT Music, enable document browser, go to Blackhole in files and grab your downloaded song."
+  },
+  {
+    "button_link": "https://github.com/binnichtaktiv/Whisper-AI-online",
+    "button_text": "Whisper-AI-online",
+    "text": "Use Whisper AI online to transcribe your own audio files or videos from YouTube!"
+  },
+  {
+    "button_link": "https://www.onlyoffice.com/de/download-desktop.aspx",
+    "button_text": "ONLYOFFICE",
+    "text": "Good and free Microsoft Office alternative - better than Libre Office💩."
+  },
+  {
+    "button_link": "https://ps-timetracker.com",
+    "button_text": "PS-Timetracker",
+    "text": "Track your playtime on PS4 - you can use the normal PS4 app from the AppStore too."
+  },
+  {
+    "button_link": "https://github.com/binnichtaktiv/binnichtaktiv.github.io/raw/refs/heads/main/useful-links/tweaks.zip",
+    "button_text": "tweaks.zip",
+    "text": "Useful tweaks to modify / unlock apps (Sideloadbypass, auto-rc, auto-itunes, flex)"
+  }
+]
