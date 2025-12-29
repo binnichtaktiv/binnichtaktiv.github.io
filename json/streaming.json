@@ -1,72 +1,71 @@
 {
-    "german_streaming_sites": [
-      {
-        "button_link": "https://livetv.ru",
-        "button_text": "Livetv.ru",
-        "text": "Best streaming website for sport in ok quality, has German links too."
-      },
-      {
-        "button_link": "https://2ix2.com",
-        "button_text": "2ix2",
-        "text": "Watch F1 on Servus or ORF for free (in German)."
-      },
-      {
-        "button_link": "https://hdfilme.my/",
-        "button_text": "hdfilme.my",
-        "text": "HDfilme best Kinox, StreamCloud alternative site"
-      },
-      {
-        "button_link": "https://kinoger.to",
-        "button_text": "KinoGer",
-        "text": "German films and series in good quality."
-      },
-      {
-        "button_link": "https://burning-series.io",
-        "button_text": "Burning-Series",
-        "text": "German and English series, always up to date."
-      },
-      {
-        "button_link": "https://s.to",
-        "button_text": "s.to",
-        "text": "Another site for German and English series."
-      }
-    ],
-    "english_streaming_sites": [
-      {
-        "button_link": "https://t.me/binnichtaktivsipas/2/21462",
-        "button_text": "Sega Football",
-        "text": "Apps for streaming football for free. Deleted from the AppStore so you have to sideload it."
-      },
-      {
-        "button_link": "https://t.me/binnichtaktivsipas/2/21473",
-        "button_text": "Football TV",
-        "text": "Apps for streaming football for free. Deleted from the AppStore so you have to sideload it."
-      },
-      {
-        "button_link": "https://t.me/binnichtaktivsipas/2/46840",
-        "button_text": "Hola Football",
-        "text": "Apps for streaming football for free. Deleted from the AppStore so you have to sideload it."
-      },
-      {
-        "button_link": "https://v2.streameast.to/",
-        "button_text": "streameast",
-        "text": "Watch high-quality, free streaming for NFL, NBA, MLB, UFC, Boxing, and Formula 1 events."
-      },
-      {
-        "button_link": "https://fullraces.com",
-        "button_text": "Full Races",
-        "text": "Free Formula 1, F1, MotoGP, IndyCar, NASCAR streams in HD."
-      },
-      {
-        "button_link": "https://v2.sportsurge.to",
-        "button_text": "sportsurge",
-        "text": "Watch NBA, NFL, MLB, NHL, soccer, and more for free with Sportsurge."
-      },
-      {
-        "button_link": "https://n3rdmade.github.io/TBCPL/",
-        "button_text": "Movie/series/tv livestream/anime",
-        "text": "Best and biggest list of movie/series/tv livestream/anime websites (not my website)"
-      }
-    ]
-  }
-  
+  "german_streaming_sites": [
+    {
+      "button_link": "https://livetv.ru",
+      "button_text": "Livetv.ru",
+      "text": "Best streaming website for sport in ok quality, has German links too."
+    },
+    {
+      "button_link": "https://2ix2.com",
+      "button_text": "2ix2",
+      "text": "Watch F1 on Servus or ORF for free (in German)."
+    },
+    {
+      "button_link": "https://hdfilme.my/",
+      "button_text": "hdfilme.my",
+      "text": "HDfilme best Kinox, StreamCloud alternative site"
+    },
+    {
+      "button_link": "https://kinoger.to",
+      "button_text": "KinoGer",
+      "text": "German films and series in good quality."
+    },
+    {
+      "button_link": "https://burning-series.io",
+      "button_text": "Burning-Series",
+      "text": "German and English series, always up to date."
+    },
+    {
+      "button_link": "https://s.to",
+      "button_text": "s.to",
+      "text": "Another site for German and English series."
+    }
+  ],
+  "english_streaming_sites": [
+    {
+      "button_link": "https://t.me/binnichtaktivsipas/2/21462",
+      "button_text": "Sega Football",
+      "text": "Apps for streaming football for free. Deleted from the AppStore so you have to sideload it."
+    },
+    {
+      "button_link": "https://t.me/binnichtaktivsipas/2/21473",
+      "button_text": "Football TV",
+      "text": "Apps for streaming football for free. Deleted from the AppStore so you have to sideload it."
+    },
+    {
+      "button_link": "https://t.me/binnichtaktivsipas/2/46840",
+      "button_text": "Hola Football",
+      "text": "Apps for streaming football for free. Deleted from the AppStore so you have to sideload it."
+    },
+    {
+      "button_link": "https://v2.streameast.to/",
+      "button_text": "streameast",
+      "text": "Watch high-quality, free streaming for NFL, NBA, MLB, UFC, Boxing, and Formula 1 events."
+    },
+    {
+      "button_link": "https://fullraces.com",
+      "button_text": "Full Races",
+      "text": "Free Formula 1, F1, MotoGP, IndyCar, NASCAR streams in HD."
+    },
+    {
+      "button_link": "https://v2.sportsurge.to",
+      "button_text": "sportsurge",
+      "text": "Watch NBA, NFL, MLB, NHL, soccer, and more for free with Sportsurge."
+    },
+    {
+      "button_link": "https://n3rdmade.github.io/TBCPL/",
+      "button_text": "Movie/series/tv livestream/anime",
+      "text": "Best and biggest list of movie/series/tv livestream/anime websites (not my website)"
+    }
+  ]
+}
